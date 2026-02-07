@@ -27,6 +27,44 @@
     font-size: 0.85rem;
 }
 
+/* ========== Category Tabs ========== */
+.category-tabs {
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.category-tabs .nav-link {
+    color: var(--text-dark);
+    background-color: var(--cream);
+    border: 1px solid var(--warm-beige);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.category-tabs .nav-link:hover {
+    background-color: var(--warm-beige);
+    border-color: var(--warm-beige);
+}
+
+.category-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Ramadan Tab Special Style */
+.category-tabs .ramadan-tab {
+    border-color: #D4AF37;
+}
+
+.category-tabs .ramadan-tab.active {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+}
+
 /* ========== Products Grid Layout ========== */
 .products-grid {
     display: grid;

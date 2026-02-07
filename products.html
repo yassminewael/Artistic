@@ -106,72 +106,37 @@
                 </ol>
             </nav>
 
-            <div class="row g-4">
+            <div class="row">
                 
-                <!-- Filters Sidebar -->
-                <aside class="col-lg-3">
-                    <div class="filters-sidebar">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="filter-title mb-0"><i class="fas fa-sliders-h"></i> Filters</h5>
-                            <a href="#" class="text-muted text-decoration-none fs-sm hover-primary" onclick="clearAllFilters()">Clear All</a>
-                        </div>
-                        
-                        <!-- Category Filter -->
-                        <div class="filter-section">
-                            <h6 class="filter-heading">Category</h6>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="cat1" checked>
-                                <label class="form-check-label" for="cat1">Vases</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="cat2">
-                                <label class="form-check-label" for="cat2">Bowls</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="cat3">
-                                <label class="form-check-label" for="cat3">Plates</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="cat4">
-                                <label class="form-check-label" for="cat4">Cups & Mugs</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="cat5">
-                                <label class="form-check-label" for="cat5">Dinnerware Sets</label>
-                            </div>
-                        </div>
-                        
-                        <!-- Price Range Filter -->
-                        <div class="filter-section">
-                            <h6 class="filter-heading">Price Range</h6>
-                            <div class="row g-2">
-                                <div class="col-6">
-                                    <input type="number" class="form-control price-input" placeholder="Min">
-                                </div>
-                                <div class="col-6">
-                                    <input type="number" class="form-control price-input" placeholder="Max">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Availability Filter -->
-                        <div class="filter-section">
-                            <h6 class="filter-heading">Availability</h6>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="inStock" checked>
-                                <label class="form-check-label" for="inStock">In Stock Only</label>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-                
-                <!-- Products Grid -->
-                <section class="col-lg-9">
+                <!-- Products Grid (Full Width) -->
+                <section class="col-12">
+                    
+                    <!-- Category Tabs -->
+                    <ul class="nav nav-pills category-tabs mb-4" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-category="all">All</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="vases">Vases</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="bowls">Bowls</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="plates">Plates</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="cups">Cups & Mugs</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link ramadan-tab" data-category="ramadan">Ramadan ✨</button>
+                        </li>
+                    </ul>
+                    
                     <!-- Header -->
                     <div class="products-header">
                         <div>
-                            <h4 class="section-title">Products</h4>
-                            <small class="results-count">Showing 9 of 48 products</small>
+                            <small class="results-count">Showing 14 products</small>
                         </div>
                         <div class="d-flex align-items-center gap-2">
                             <label for="sortSelect" class="text-muted fs-sm mb-0 d-none d-md-block">Sort by:</label>
@@ -187,7 +152,7 @@
                     <!-- Products Row -->
                     <div class="row g-4">
                         <!-- Product 1 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">NEW</span>
@@ -216,7 +181,7 @@
                         </div>
                         
                         <!-- Product 2 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <img src="images/products/bowl.png" alt="Serving Bowl" class="product-image">
@@ -238,7 +203,7 @@
                         </div>
                         
                         <!-- Product 3 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">-15%</span>
@@ -261,7 +226,7 @@
                         </div>
                         
                         <!-- Product 4 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <img src="images/products/plate.jpg" alt="Dinner Plate" class="product-image">
@@ -283,7 +248,7 @@
                         </div>
                         
                         <!-- Product 5 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <img src="images/products/mug.jpg" alt="Coffee Mug" class="product-image">
@@ -305,7 +270,7 @@
                         </div>
                         
                         <!-- Product 6 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">SALE</span>
@@ -328,7 +293,7 @@
                         </div>
                         
                         <!-- Product 7 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">NEW</span>
@@ -351,7 +316,7 @@
                         </div>
                         
                         <!-- Product 8 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <img src="images/products/pasta-bowl.png" alt="Pasta Bowl" class="product-image">
@@ -373,7 +338,7 @@
                         </div>
                         
                         <!-- Product 9 -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">-20%</span>
@@ -402,7 +367,7 @@
                     <h4 class="section-title mb-4 text-center">Ramadan Collection 🌙</h4>
                     <div class="row g-4">
                         <!-- Product 10: Ramadan Lantern -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">LIMITED</span>
@@ -425,7 +390,7 @@
                         </div>
                         
                         <!-- Product 11: Dates Bowl -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">NEW</span>
@@ -448,7 +413,7 @@
                         </div>
                         
                         <!-- Product 12: Prayer Beads Holder -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">EXCLUSIVE</span>
@@ -471,7 +436,7 @@
                         </div>
 
                         <!-- Product 13: Traditional Mashrabiya Lantern -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">LIMITED</span>
@@ -494,7 +459,7 @@
                         </div>
 
                         <!-- Product 14: Speckled Date Selection Bowl -->
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">NEW</span>
