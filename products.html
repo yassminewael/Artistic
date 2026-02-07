@@ -176,7 +176,7 @@
                                     </div>
                                     <!-- Action Buttons -->
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal">
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct1">
                                             <i class="fas fa-eye"></i>
                                         </button>
                                         <button class="btn btn-buy-now">
@@ -202,7 +202,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct2"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct3"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -247,7 +247,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct4"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -269,7 +269,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct5"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -292,7 +292,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct6"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -315,7 +315,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct7"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -337,7 +337,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct8"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -360,7 +360,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#productModal"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct9"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -373,8 +373,10 @@
         </div>
     </main>
 
-    <!-- ========== PRODUCT PREVIEW MODAL ========== -->
-    <div class="modal fade modal-custom" id="productModal" tabindex="-1" aria-hidden="true">
+    <!-- ========== PRODUCT MODALS ========== -->
+    
+    <!-- Modal 1: Vase -->
+    <div class="modal fade modal-custom" id="modalProduct1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -383,22 +385,17 @@
                 </div>
                 <div class="modal-body">
                     <div class="row g-4">
-                        <!-- Product Carousel (Image + 3D View) -->
                         <div class="col-md-7">
-                            <div id="productModalCarousel" class="carousel slide" data-bs-interval="false">
+                            <div id="carouselProduct1" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#productModalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Product Image"></button>
-                                    <button type="button" data-bs-target="#productModalCarousel" data-bs-slide-to="1" aria-label="3D View"></button>
+                                    <button type="button" data-bs-target="#carouselProduct1" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct1" data-bs-slide-to="1"></button>
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
-                                    <!-- Slide 1: Main Product Image -->
                                     <div class="carousel-item active">
                                         <img src="images/products/vase.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Stone Vase">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <span class="badge bg-dark bg-opacity-50">Product View</span>
-                                        </div>
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
-                                    <!-- Slide 2: 3D Viewer Placeholder -->
                                     <div class="carousel-item">
                                         <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
                                         <div class="carousel-caption d-block">
@@ -407,31 +404,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#productModalCarousel" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#productModalCarousel" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct1" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct1" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
                             </div>
                         </div>
-                        <!-- Product Details -->
                         <div class="col-md-5">
                             <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Minimalist Stone Vase</h4>
                             <p class="product-price fs-4 mb-3">$78.00</p>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
-                                Handcrafted ceramic vase with a natural matte finish. 
-                                Perfect for dried flowers or as a standalone decorative piece.
-                            </p>
-                            <ul class="list-unstyled" style="color: var(--text-muted); font-size: 0.9rem;">
-                                <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--warm-brown);"></i>Handmade ceramic</li>
-                                <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--warm-brown);"></i>Height: 25cm</li>
-                                <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--warm-brown);"></i>Waterproof interior</li>
-                                <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--warm-brown);"></i>Made by artisans</li>
-                            </ul>
-                            
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Handcrafted ceramic vase with a natural matte finish. Perfect for dried flowers or as a standalone decorative piece.</p>
                             <div class="d-flex align-items-center gap-3 mb-3 mt-4">
                                 <div class="quantity-selector">
                                     <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
@@ -440,15 +420,409 @@
                                 </div>
                                 <span class="text-muted fs-sm">In Stock</span>
                             </div>
-
-                            <button class="btn btn-add-to-cart">
-                                <i class="fas fa-shopping-cart me-2"></i>Add to Cart
-                            </button>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" style="background-color: var(--warm-beige); color: var(--text-dark);" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Bowl -->
+    <div class="modal fade modal-custom" id="modalProduct2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Handmade Serving Bowl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct2" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct2" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct2" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/bowl.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Handmade Serving Bowl">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct2" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct2" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Handmade Serving Bowl</h4>
+                            <p class="product-price fs-4 mb-3">$52.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A wide, shallow ceramic serving bowl. The rim is uneven and organic, looking hand-thrown.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Cup Set -->
+    <div class="modal fade modal-custom" id="modalProduct3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ceramic Cup Set (4 pcs)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct3" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct3" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct3" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/cup-set.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ceramic Cup Set">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct3" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct3" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Ceramic Cup Set (4 pcs)</h4>
+                            <p class="product-price fs-4 mb-3">$68.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A set of 4 identical handleless ceramic cups arranged together. Japanese minimalist style.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Plate -->
+    <div class="modal fade modal-custom" id="modalProduct4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Artisan Dinner Plate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct4" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct4" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct4" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/plate.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Artisan Dinner Plate">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct4" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct4" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Artisan Dinner Plate</h4>
+                            <p class="product-price fs-4 mb-3">$32.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A single flat ceramic dinner plate with a slightly raised lip. The edge is irregular and organic.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Mug -->
+    <div class="modal fade modal-custom" id="modalProduct5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nordic Coffee Mug</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct5" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct5" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct5" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/mug.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Nordic Coffee Mug">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct5" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct5" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Nordic Coffee Mug</h4>
+                            <p class="product-price fs-4 mb-3">$24.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A sturdy ceramic coffee mug with a thick, comfortable handle. Rounded and cozy design.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 6: Dinner Set -->
+    <div class="modal fade modal-custom" id="modalProduct6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Complete Dinnerware Set</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct6" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct6" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct6" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/dinner-set.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Complete Dinnerware Set">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct6" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct6" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Complete Dinnerware Set</h4>
+                            <p class="product-price fs-4 mb-3">$145.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A full dinnerware set arranged neatly. Includes a large dinner plate, a smaller salad plate, and a bowl.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Planter -->
+    <div class="modal fade modal-custom" id="modalProduct7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terracotta Planter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct7" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct7" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct7" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/planter.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Terracotta Planter">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct7" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct7" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Terracotta Planter</h4>
+                            <p class="product-price fs-4 mb-3">$42.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A simple, cylindrical terracotta planter pot. Classic reddish-brown clay texture with a matte finish.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Pasta Bowl -->
+    <div class="modal fade modal-custom" id="modalProduct8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Speckled Pasta Bowl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct8" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct8" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct8" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/pasta-bowl.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Speckled Pasta Bowl">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct8" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct8" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Speckled Pasta Bowl</h4>
+                            <p class="product-price fs-4 mb-3">$38.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A deep ceramic pasta bowl with a wide rim. White glaze with heavy black speckles.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 9: Tea Set -->
+    <div class="modal fade modal-custom" id="modalProduct9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rustic Tea Set</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct9" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct9" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct9" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/tea-set.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Rustic Tea Set">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct9" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct9" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Rustic Tea Set</h4>
+                            <p class="product-price fs-4 mb-3">$89.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A rustic ceramic teapot with a bamboo or wooden handle, accompanied by two small matching tea cups.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -571,5 +945,6 @@
             });
         });
     </script>
+
 </body>
 </html>
