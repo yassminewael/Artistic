@@ -1,0 +1,89 @@
+/* ==========================================
+   CERA Home - Products Page Styles
+   ==========================================
+   Page-specific styles for products-cera.html
+   Dependencies: styles.css, components/*
+   ========================================== */
+
+/* ========== Products Header ========== */
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--text-dark);
+}
+
+.results-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* ========== Products Grid Layout ========== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ========== Sidebar Sticky ========== */
+@media (min-width: 992px) {
+    .filters-sidebar {
+        position: sticky;
+        top: 100px;
+    }
+}
+
+/* ========== Empty State ========== */
+.products-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+.products-empty i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--light-tan);
+}
+
+/* ========== Pagination ========== */
+.products-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.products-pagination .page-link {
+    color: var(--text-dark);
+    border-color: var(--warm-beige);
+    padding: 8px 14px;
+}
+
+.products-pagination .page-link:hover,
+.products-pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 991.98px) {
+    .filters-sidebar {
+        margin-bottom: 30px;
+    }
+    
+    .products-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}

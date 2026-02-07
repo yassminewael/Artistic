@@ -1,0 +1,373 @@
+/* ==========================================
+   CERA Home - Buttons Component
+   ==========================================
+   Reusable button styles
+   Dependencies: styles.css (variables)
+   ========================================== */
+
+/* ========== Primary Button ========== */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* ========== Outline Button ========== */
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* ========== Login/Signup Buttons ========== */
+.btn-login {
+    background-color: transparent;
+    border: 1px solid var(--warm-beige);
+    color: var(--text-dark) !important;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-login:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color) !important;
+}
+
+.btn-signup {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn-signup:hover {
+    background-color: var(--primary-hover);
+}
+
+/* ========== Add Product Button ========== */
+.btn-add-product {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn-add-product:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* ========== View Product Button ========== */
+.btn-view-product {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.btn-view-product:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* ========== Add to Cart Button ========== */
+.btn-add-to-cart {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 25px;
+    width: 100%;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* ========== Apply Filter Button ========== */
+.btn-apply-filter {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn-apply-filter:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* ========== Catalogue Button ========== */
+.btn-catalogue {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 1px solid var(--warm-beige);
+    border-radius: 4px;
+    padding: 12px 30px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-catalogue:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* ========== Hero Button ========== */
+.btn-hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 14px 35px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.btn-hero:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* ========== Newsletter Button ========== */
+.btn-newsletter {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 12px 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-newsletter:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* ========== Contact Button ========== */
+.btn-contact {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* ========== Discount Button ========== */
+.btn-discount {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 1px solid var(--text-dark);
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.btn-discount:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* ========== Quantity Selector (Enhanced UI/UX) ========== */
+.quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background-color: var(--cream);
+    border: 2px solid var(--warm-beige);
+    border-radius: var(--radius-pill); 
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(92, 74, 58, 0.08);
+    transition: all 0.3s ease;
+}
+
+.quantity-selector:hover {
+    border-color: var(--primary-light);
+    box-shadow: 0 4px 12px rgba(92, 74, 58, 0.15);
+}
+
+.quantity-selector:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.15);
+}
+
+.qty-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.qty-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.qty-btn:active {
+    transform: scale(0.95);
+    background-color: var(--primary-hover);
+}
+
+.qty-minus {
+    margin-right: 2px;
+}
+
+.qty-plus {
+    margin-left: 2px;
+}
+
+.qty-input {
+    width: 40px;
+    height: 32px;
+    border: none;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: transparent;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    transition: color 0.2s;
+}
+
+.qty-input:focus {
+    outline: none;
+    color: var(--primary-color);
+}
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ========== Product Actions (Side-by-side buttons) ========== */
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.product-actions .btn-view-product {
+    width: auto;
+    flex: 0 0 auto;
+    padding: 10px 15px;
+}
+
+.product-actions .btn-view-product i {
+    font-size: 1rem;
+}
+
+/* ========== Buy Now Button ========== */
+.btn-buy-now {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    flex: 1;
+    transition: all 0.2s;
+}
+
+.btn-buy-now:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(92, 74, 58, 0.25);
+}
+
+/* ========== Scroll to Top Button ========== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(92, 74, 58, 0.3);
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(92, 74, 58, 0.4);
+}

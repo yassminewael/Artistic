@@ -1,0 +1,126 @@
+/* ==========================================
+   CERA Home - Modals Component
+   ==========================================
+   Reusable modal dialog styles
+   Dependencies: styles.css (variables)
+   ========================================== */
+
+/* ========== Modal Container ========== */
+.modal-custom .modal-content {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ========== Modal Header ========== */
+.modal-custom .modal-header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--warm-beige);
+    padding: 20px 25px;
+}
+
+.modal-custom .modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.modal-custom .btn-close {
+    opacity: 0.5;
+}
+
+.modal-custom .btn-close:hover {
+    opacity: 1;
+}
+
+/* ========== Modal Body ========== */
+.modal-custom .modal-body {
+    background-color: var(--cream);
+    padding: 25px;
+}
+
+/* ========== Modal Footer ========== */
+.modal-custom .modal-footer {
+    background-color: var(--cream);
+    border-top: 1px solid var(--warm-beige);
+    padding: 15px 25px;
+}
+
+/* ========== 3D Viewer Placeholder ========== */
+.viewer-placeholder {
+    background-color: var(--white);
+    border: 2px dashed var(--light-tan);
+    border-radius: 8px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-tan);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.viewer-placeholder i {
+    font-size: 3rem;
+}
+
+.viewer-placeholder p {
+    margin: 0;
+}
+
+/* ========== Image Slider ========== */
+.image-slider-item {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: var(--cream);
+    transition: border-color 0.2s;
+}
+
+.image-slider-item:hover,
+.image-slider-item.active {
+    border-color: var(--primary-color);
+}
+
+/* ========== Modal Product Details ========== */
+.modal-product-title {
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 10px;
+}
+
+.modal-product-description {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.modal-product-features {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.modal-product-features li {
+    margin-bottom: 8px;
+}
+
+.modal-product-features .fa-check {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+/* ========== Close Modal Button ========== */
+.btn-close-modal {
+    background-color: var(--warm-beige);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-close-modal:hover {
+    background-color: var(--light-tan);
+}

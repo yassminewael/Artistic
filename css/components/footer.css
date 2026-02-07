@@ -1,0 +1,122 @@
+/* ==========================================
+   CERA Home - Footer Component
+   ==========================================
+   Reusable footer styles
+   Dependencies: styles.css (variables)
+   ========================================== */
+
+/* ========== Footer Container ========== */
+.footer-cera {
+    background-color: var(--footer-dark);
+    color: var(--white);
+    padding: 60px 0 30px;
+    margin-top: 60px;
+}
+
+/* ========== Footer Brand ========== */
+.footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-brand span {
+    display: block;
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+/* ========== Footer Text ========== */
+.footer-text {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+/* ========== Footer Titles ========== */
+.footer-title {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+/* ========== Footer Links ========== */
+.footer-link {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+/* ========== Footer Social ========== */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: rgba(255,255,255,0.6);
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+/* ========== Footer Bottom ========== */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 25px;
+    margin-top: 40px;
+}
+
+.footer-copyright {
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* ========== Newsletter ========== */
+.newsletter-input {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--white);
+    border-radius: 4px 0 0 4px;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+.newsletter-input:focus {
+    background-color: rgba(255,255,255,0.15);
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 767.98px) {
+    .footer-cera {
+        padding: 40px 0 20px;
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+}
