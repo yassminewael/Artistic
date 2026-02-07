@@ -32,6 +32,13 @@
 </head>
 <body>
 
+    <!-- ========== TOP BAR (ANNOUNCEMENT) ========== -->
+    <div class="top-bar">
+        <div class="container text-center">
+            <span>Ramadan Kareem! 🌙 Free shipping on all orders over $150</span>
+        </div>
+    </div>
+
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
@@ -60,7 +67,15 @@
                     <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
                     <a href="#" class="nav-icon" title="Wishlist"><i class="far fa-heart"></i></a>
                     <a href="#" class="nav-icon" title="Cart"><i class="fas fa-shopping-bag"></i></a>
-                    <a href="#" class="nav-icon" title="Account"><i class="far fa-user"></i></a>
+                    
+                    <!-- Divider -->
+                    <div class="vr mx-3 text-secondary opacity-25 d-none d-lg-block"></div>
+                    
+                    <!-- Auth Actions -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none text-dark fw-medium fs-sm hover-primary">Login</a>
+                        <a href="#" class="btn btn-signup">Sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,6 +376,127 @@
                                     </div>
                                     <div class="product-actions">
                                         <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct9"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Ramadan Collection -->
+                <section class="col-12 mt-4">
+                    <h4 class="section-title mb-4 text-center">Ramadan Collection 🌙</h4>
+                    <div class="row g-4">
+                        <!-- Product 10: Ramadan Lantern -->
+                        <div class="col-md-6 col-lg-4">
+                            <article class="product-card">
+                                <div class="product-image-wrapper">
+                                    <span class="product-badge" style="background-color: #D4AF37;">LIMITED</span>
+                                    <img src="images/products/ramadan-lantern.png" alt="Geometric Cutout Lantern" class="product-image">
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="product-name">Geometric Cutout Lantern</h5>
+                                    <p class="product-price">$85.00</p>
+                                    <div class="quantity-selector mb-3">
+                                        <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                                        <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct10"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Product 11: Dates Bowl -->
+                        <div class="col-md-6 col-lg-4">
+                            <article class="product-card">
+                                <div class="product-image-wrapper">
+                                    <span class="product-badge" style="background-color: #D4AF37;">NEW</span>
+                                    <img src="images/products/ramadan-dates-bowl.png" alt="Golden Rim Dates Bowl" class="product-image">
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="product-name">Golden Rim Dates Bowl</h5>
+                                    <p class="product-price">$55.00</p>
+                                    <div class="quantity-selector mb-3">
+                                        <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                                        <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct11"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Product 12: Prayer Beads Holder -->
+                        <div class="col-md-6 col-lg-4">
+                            <article class="product-card">
+                                <div class="product-image-wrapper">
+                                    <span class="product-badge" style="background-color: #D4AF37;">EXCLUSIVE</span>
+                                    <img src="images/products/ramadan-prayer-holder.png" alt="Minimalist Misbaha Holder" class="product-image">
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="product-name">Minimalist Misbaha Holder</h5>
+                                    <p class="product-price">$45.00</p>
+                                    <div class="quantity-selector mb-3">
+                                        <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                                        <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct12"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Product 13: Traditional Mashrabiya Lantern -->
+                        <div class="col-md-6 col-lg-4">
+                            <article class="product-card">
+                                <div class="product-image-wrapper">
+                                    <span class="product-badge" style="background-color: #D4AF37;">LIMITED</span>
+                                    <img src="images/products/ramadan-lantern-2.png" alt="Traditional Mashrabiya Lantern" class="product-image">
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="product-name">Traditional Mashrabiya Lantern</h5>
+                                    <p class="product-price">$95.00</p>
+                                    <div class="quantity-selector mb-3">
+                                        <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                                        <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct13"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Product 14: Speckled Date Selection Bowl -->
+                        <div class="col-md-6 col-lg-4">
+                            <article class="product-card">
+                                <div class="product-image-wrapper">
+                                    <span class="product-badge" style="background-color: #D4AF37;">NEW</span>
+                                    <img src="images/products/ramadan-dates-bowl-2.png" alt="Speckled Date Selection Bowl" class="product-image">
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="product-name">Speckled Date Selection Bowl</h5>
+                                    <p class="product-price">$48.00</p>
+                                    <div class="quantity-selector mb-3">
+                                        <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                                        <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct14"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -828,7 +964,255 @@
         </div>
     </div>
 
-    <!-- ========== ADD PRODUCT MODAL ========== -->
+    <!-- Modal 10: Ramadan Lantern -->
+    <div class="modal fade modal-custom" id="modalProduct10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Geometric Cutout Lantern</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct10" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct10" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct10" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/ramadan-lantern.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Geometric Cutout Lantern">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct10" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct10" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Geometric Cutout Lantern</h4>
+                            <p class="product-price fs-4 mb-3">$85.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Handcrafted ceramic lantern with intricate geometric cutouts. When lit, it casts beautiful star-like shadows creating a warm, spiritual ambiance for Ramadan nights.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 11: Dates Bowl -->
+    <div class="modal fade modal-custom" id="modalProduct11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Golden Rim Dates Bowl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct11" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct11" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct11" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/ramadan-dates-bowl.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Golden Rim Dates Bowl">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct11" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct11" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Golden Rim Dates Bowl</h4>
+                            <p class="product-price fs-4 mb-3">$55.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Elegant serving bowl featuring a delicate golden rim. Perfectly sized for serving dates and nuts during Iftar. The ivory glaze highlights the texture of the organic ceramic.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 12: Prayer Beads Holder -->
+    <div class="modal fade modal-custom" id="modalProduct12" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minimalist Misbaha Holder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct12" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct12" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct12" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/ramadan-prayer-holder.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Misbaha Holder">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct12" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct12" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Minimalist Misbaha Holder</h4>
+                            <p class="product-price fs-4 mb-3">$45.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A beautifully designed modern ceramic dish specfically crafted to hold prayer beads (misbaha). A serene and spiritual addition to any prayer corner or bedside table.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 13: Mix Lantern -->
+    <div class="modal fade modal-custom" id="modalProduct13" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Traditional Mashrabiya Lantern</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct13" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct13" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct13" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/ramadan-lantern-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Traditional Mashrabiya Lantern">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct13" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct13" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Traditional Mashrabiya Lantern</h4>
+                            <p class="product-price fs-4 mb-3">$95.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Inspired by traditional Mashrabiya architecture, this lantern features dense, intricate patterns that create a stunning play of light and shadow.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 14: Speckled Dates Bowl -->
+    <div class="modal fade modal-custom" id="modalProduct14" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Speckled Date Selection Bowl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <div id="carouselProduct14" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProduct14" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carouselProduct14" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner rounded overflow-hidden">
+                                    <div class="carousel-item active">
+                                        <img src="images/products/ramadan-dates-bowl-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Speckled Date Selection Bowl">
+                                        <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/3d-placeholder.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="3D View">
+                                        <div class="carousel-caption d-block"><span class="badge bg-primary mb-2">3D View</span><p class="bg-dark bg-opacity-50 rounded px-2 d-inline-block">Interactive 3D Model</p></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct14" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct14" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 10px;">Speckled Date Selection Bowl</h4>
+                            <p class="product-price fs-4 mb-3">$48.00</p>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">A modern take on the traditional dates bowl, featuring a beautiful speckled glaze and a wide, open form for easy sharing.</p>
+                            <div class="d-flex align-items-center gap-3 mb-3 mt-4">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn qty-minus" onclick="changeQty(this, -1)">−</button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="99">
+                                    <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
+                                </div>
+                                <span class="text-muted fs-sm">In Stock</span>
+                            </div>
+                            <button class="btn btn-add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade modal-custom" id="addProductModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">

@@ -48,6 +48,17 @@
 /* Product Body */
 .product-body {
     padding: 20px;
+    text-align: center;
+}
+
+/* Center quantity selector in card */
+.product-body .quantity-selector {
+    justify-content: center;
+}
+
+/* Center action buttons in card */
+.product-body .product-actions {
+    justify-content: center;
 }
 
 .product-name {

@@ -5,11 +5,23 @@
    Dependencies: styles.css (variables)
    ========================================== */
 
+/* ========== Top Bar (Announcement) ========== */
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 8px 0;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1031; /* Above sticky nav if needed */
+}
+
 /* ========== Base Navbar ========== */
 .navbar-custom {
     background-color: var(--white);
     border-bottom: 1px solid var(--warm-beige);
-    padding: 15px 0; /* Concise and short */
+    padding: 10px 0; /* Sleek and compact */
     transition: all 0.3s ease;
 }
 
@@ -20,7 +32,7 @@
 /* ========== Premium Brand Logo ========== */
 .navbar-custom .navbar-brand {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
+    font-size: 1.8rem; /* Refined size for compact nav */
     font-weight: 700;
     color: var(--primary-color) !important;
     letter-spacing: 0.1em;
@@ -34,8 +46,8 @@
 .navbar-custom .navbar-brand::after {
     content: '';
     display: inline-block;
-    width: 6px;
-    height: 6px;
+    width: 4px; /* Proportional */
+    height: 4px; /* Proportional */
     background-color: var(--primary-color);
     border-radius: 50%;
     margin-left: 5px;
@@ -62,26 +74,10 @@
     transition: color 0.3s ease;
 }
 
-/* Hover Effect - Underline Slide */
-.navbar-custom .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
-}
-
+/* Hover Effect - Simple Color Change */
 .navbar-custom .nav-link:hover,
 .navbar-custom .nav-link.active {
     color: var(--primary-color) !important;
-}
-
-.navbar-custom .nav-link:hover::after,
-.navbar-custom .nav-link.active::after {
-    width: 100%;
 }
 
 /* ========== Nav Icons ========== */
@@ -145,4 +141,12 @@
     .navbar-custom .nav-link {
         display: inline-block;
     }
+}
+
+/* Utility: Hover Primary Color */
+.hover-primary {
+    transition: color 0.2s ease;
+}
+.hover-primary:hover {
+    color: var(--primary-color) !important;
 }
