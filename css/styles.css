@@ -228,6 +228,9 @@ ul, ol {
 .bg-light { background-color: var(--bg-light); }
 .bg-dark { background-color: var(--bg-dark); }
 .bg-white { background-color: #ffffff; }
+.bg-warm-beige { background-color: var(--warm-beige); }
+
+.text-warm-brown { color: var(--warm-brown); }
 
 /* ========== 7. Bilingual / Arabic Support ========== */
 

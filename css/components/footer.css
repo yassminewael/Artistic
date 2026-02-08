@@ -35,6 +35,18 @@
     line-height: 1.7;
 }
 
+.footer-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.footer-team-highlight {
+    font-weight: 700;
+    color: var(--warm-brown);
+    font-style: normal;
+}
+
 /* ========== Footer Titles ========== */
 .footer-title {
     font-size: 0.95rem;

@@ -155,3 +155,44 @@
 .pagination-custom .page-link:focus {
     box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.15);
 }
+
+/* ========== Utility Classes for Cleanup ========== */
+.badge-ramadan,
+.badge-antique,
+.badge-limited {
+    background-color: #D4AF37 !important;
+}
+
+.carousel-control-icon-dark {
+    filter: invert(1);
+}
+
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.product-modal-img-height {
+    height: 400px;
+    object-fit: cover;
+}
+
+.lh-1-7 {
+    line-height: 1.7;
+}
+
+.font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.sort-select {
+    width: auto;
+    min-width: 140px;
+    cursor: pointer;
+}
+
+.product-modal-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
