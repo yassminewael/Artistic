@@ -6,6 +6,12 @@
     <meta name="description" content="CERA Home - Browse our ceramic collection">
     <title>Products - CERA Home</title>
     
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -64,9 +70,9 @@
                     </li>
                 </ul>
                 <div class="nav-icons d-flex align-items-center gap-3">
-                    <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
-                    <a href="#" class="nav-icon" title="Wishlist"><i class="far fa-heart"></i></a>
-                    <a href="#" class="nav-icon" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="#" class="nav-icon" aria-label="Search" title="Search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon" aria-label="Wishlist" title="Wishlist"><i class="far fa-heart"></i></a>
+                    <a href="#" class="nav-icon" aria-label="Cart" title="Cart"><i class="fas fa-shopping-bag"></i></a>
                     
                     <!-- Divider -->
                     <div class="vr mx-3 text-secondary opacity-25 d-none d-lg-block"></div>
@@ -88,7 +94,7 @@
                 <div class="col-lg-6">
                     <div class="position-relative">
                         <i class="fas fa-search search-icon"></i>
-                        <input type="text" class="form-control search-input" placeholder="Search for ceramics, vases, bowls...">
+                        <input type="text" class="form-control search-input" placeholder="Search for ceramics, vases, bowls..." aria-label="Search products">
                     </div>
                 </div>
             </div>
@@ -156,7 +162,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">NEW</span>
-                                    <img src="images/products/vase/vase-slide-1.png" alt="Stone Vase" class="product-image">
+                                    <img src="images/products/vase/vase-slide-1.webp" alt="Stone Vase" class="product-image" width="1024" height="1024">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Minimalist Stone Vase</h5>
@@ -169,7 +175,7 @@
                                     </div>
                                     <!-- Action Buttons -->
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct1">
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct1">
                                             <i class="fas fa-eye"></i>
                                         </button>
                                         <button class="btn btn-buy-now">
@@ -184,7 +190,7 @@
                         <div class="col-sm-6 col-lg-3">
                             <article class="product-card">
                                 <div class="product-image-wrapper">
-                                    <img src="images/products/bowl/bowl-slide-1.png" alt="Serving Bowl" class="product-image">
+                                    <img src="images/products/bowl/bowl-slide-1.webp" alt="Serving Bowl" class="product-image" width="1024" height="1024">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Handmade Serving Bowl</h5>
@@ -195,7 +201,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct2"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct2"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -207,7 +213,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">-15%</span>
-                                    <img src="images/products/Cup-set/cup-set-slide-1.png" alt="Cup Set" class="product-image">
+                                    <img src="images/products/Cup-set/cup-set-slide-1.webp" alt="Cup Set" class="product-image" width="1024" height="1024">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Ceramic Cup Set (4 pcs)</h5>
@@ -218,7 +224,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct3"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct3"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -231,7 +237,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge">NEW</span>
-                                    <img src="images/products/planter/planter-slide-1.png" alt="Terracotta Planter" class="product-image">
+                                    <img src="images/products/planter/planter-slide-1.webp" alt="Terracotta Planter" class="product-image" width="1024" height="1024">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Terracotta Planter</h5>
@@ -242,7 +248,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct7"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct7"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -254,7 +260,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">ANTIQUE</span>
-                                    <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-1.png" alt="Ancient Egyptian Cat Statue" class="product-image">
+                                    <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-1.webp" alt="Ancient Egyptian Cat Statue" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Ancient Egyptian Cat Statue</h5>
@@ -265,7 +271,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct8"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct8"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -277,7 +283,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">ANTIQUE</span>
-                                    <img src="images/products/Pharoah-antique/pharaoh-antique-slide-1.png" alt="Pharaoh Antique Artifact" class="product-image">
+                                    <img src="images/products/Pharoah-antique/pharaoh-antique-slide-1.webp" alt="Pharaoh Antique Artifact" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Pharaoh Antique Artifact</h5>
@@ -288,7 +294,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct9"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct9"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -306,7 +312,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">LIMITED</span>
-                                    <img src="images/products/ramadan-lantern.png" alt="Geometric Cutout Lantern" class="product-image">
+                                    <img src="images/products/ramadan-lantern.webp" alt="Geometric Cutout Lantern" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Geometric Cutout Lantern</h5>
@@ -317,7 +323,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct10"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct10"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -329,7 +335,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-dates-bowl.png" alt="Golden Rim Dates Bowl" class="product-image">
+                                    <img src="images/products/ramadan-dates-bowl.webp" alt="Golden Rim Dates Bowl" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Golden Rim Dates Bowl</h5>
@@ -340,7 +346,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct11"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct11"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -352,7 +358,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-prayer-holder.png" alt="Minimalist Misbaha Holder" class="product-image">
+                                    <img src="images/products/ramadan-prayer-holder.webp" alt="Minimalist Misbaha Holder" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Minimalist Misbaha Holder</h5>
@@ -363,7 +369,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct12"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct12"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -375,7 +381,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-lantern-2.png" alt="Traditional Mashrabiya Lantern" class="product-image">
+                                    <img src="images/products/ramadan-lantern-2.webp" alt="Traditional Mashrabiya Lantern" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Traditional Mashrabiya Lantern</h5>
@@ -386,7 +392,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct13"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct13"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -398,7 +404,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-dates-bowl-2.png" alt="Speckled Date Selection Bowl" class="product-image">
+                                    <img src="images/products/ramadan-dates-bowl-2.webp" alt="Speckled Date Selection Bowl" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Speckled Date Selection Bowl</h5>
@@ -409,7 +415,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct14"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct14"><i class="fas fa-eye"></i></button>
                                         <button class="btn btn-buy-now"><i class="fas fa-shopping-cart me-1"></i>Buy</button>
                                     </div>
                                 </div>
@@ -421,7 +427,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-mashrabiya.png" alt="Traditional Mashrabiya Lantern" class="product-image">
+                                    <img src="images/products/ramadan-mashrabiya.webp" alt="Traditional Mashrabiya Lantern" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Traditional Mashrabiya Lantern</h5>
@@ -432,7 +438,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct4">
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct4">
                                             <i class="fas fa-eye"></i>
                                         </button>
                                         <button class="btn btn-buy-now">
@@ -448,7 +454,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-speckled-bowl.png" alt="Speckled Date Selection Bowl" class="product-image">
+                                    <img src="images/products/ramadan-speckled-bowl.webp" alt="Speckled Date Selection Bowl" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Speckled Date Selection Bowl</h5>
@@ -459,7 +465,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct5">
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct5">
                                             <i class="fas fa-eye"></i>
                                         </button>
                                         <button class="btn btn-buy-now">
@@ -475,7 +481,7 @@
                             <article class="product-card">
                                 <div class="product-image-wrapper">
                                     <span class="product-badge" style="background-color: #D4AF37;">RAMADAN</span>
-                                    <img src="images/products/ramadan-misbaha.png" alt="Minimalist Misbaha Holder" class="product-image">
+                                    <img src="images/products/ramadan-misbaha.webp" alt="Minimalist Misbaha Holder" class="product-image" width="1024" height="1024" loading="lazy">
                                 </div>
                                 <div class="product-body">
                                     <h5 class="product-name">Minimalist Misbaha Holder</h5>
@@ -486,7 +492,7 @@
                                         <button class="qty-btn qty-plus" onclick="changeQty(this, 1)">+</button>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-view-product" data-bs-toggle="modal" data-bs-target="#modalProduct6">
+                                        <button class="btn btn-view-product" aria-label="Quick View" data-bs-toggle="modal" data-bs-target="#modalProduct6">
                                             <i class="fas fa-eye"></i>
                                         </button>
                                         <button class="btn btn-buy-now">
@@ -543,15 +549,15 @@
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/vase/vase-slide-1.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Stone Vase - Main View">
+                                        <img src="images/products/vase/vase-slide-1.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Minimalist Stone Vase - Main View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Main View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/vase/vase-slide-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Stone Vase - Detail View">
+                                        <img src="images/products/vase/vase-slide-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Minimalist Stone Vase - Detail View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Detail View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/vase/vase-slide-3.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Stone Vase - Lifestyle View">
+                                        <img src="images/products/vase/vase-slide-3.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Minimalist Stone Vase - Lifestyle View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Lifestyle View</span></div>
                                     </div>
                                 </div>
@@ -598,15 +604,15 @@
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/bowl/bowl-slide-1.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Handmade Serving Bowl - Main View">
+                                        <img src="images/products/bowl/bowl-slide-1.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Handmade Serving Bowl - Main View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Main View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/bowl/bowl-slide-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Handmade Serving Bowl - Detail View">
+                                        <img src="images/products/bowl/bowl-slide-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Handmade Serving Bowl - Detail View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Detail View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/bowl/bowl-slide-3.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Handmade Serving Bowl - Lifestyle View">
+                                        <img src="images/products/bowl/bowl-slide-3.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Handmade Serving Bowl - Lifestyle View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Lifestyle View</span></div>
                                     </div>
                                 </div>
@@ -653,15 +659,15 @@
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/Cup-set/cup-set-slide-1.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ceramic Cup Set - Main View">
+                                        <img src="images/products/Cup-set/cup-set-slide-1.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Ceramic Cup Set - Main View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Main View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/Cup-set/cup-set-slide-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ceramic Cup Set - Detail View">
+                                        <img src="images/products/Cup-set/cup-set-slide-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Ceramic Cup Set - Detail View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Detail View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/Cup-set/cup-set-slide-3.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ceramic Cup Set - Lifestyle View">
+                                        <img src="images/products/Cup-set/cup-set-slide-3.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Ceramic Cup Set - Lifestyle View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Lifestyle View</span></div>
                                     </div>
                                 </div>
@@ -704,7 +710,7 @@
                             <div id="carouselProduct4" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-mashrabiya.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Traditional Mashrabiya Lantern">
+                                        <img src="images/products/ramadan-mashrabiya.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Traditional Mashrabiya Lantern">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -745,7 +751,7 @@
                             <div id="carouselProduct5" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-speckled-bowl.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Speckled Date Selection Bowl">
+                                        <img src="images/products/ramadan-speckled-bowl.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Speckled Date Selection Bowl">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -786,7 +792,7 @@
                             <div id="carouselProduct6" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-misbaha.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Misbaha Holder">
+                                        <img src="images/products/ramadan-misbaha.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Minimalist Misbaha Holder">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -831,15 +837,15 @@
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/planter/planter-slide-1.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Terracotta Planter - Main View">
+                                        <img src="images/products/planter/planter-slide-1.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Terracotta Planter - Main View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Main View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/planter/planter-slide-2.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Terracotta Planter - Detail View">
+                                        <img src="images/products/planter/planter-slide-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Terracotta Planter - Detail View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Detail View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/planter/planter-slide-3.jpg" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Terracotta Planter - Lifestyle View">
+                                        <img src="images/products/planter/planter-slide-3.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Terracotta Planter - Lifestyle View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Lifestyle View</span></div>
                                     </div>
                                 </div>
@@ -886,15 +892,15 @@
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-1.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ancient Egyptian Cat Statue - Main View">
+                                        <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-1.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Ancient Egyptian Cat Statue - Main View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Main View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ancient Egyptian Cat Statue - Detail View">
+                                        <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Ancient Egyptian Cat Statue - Detail View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Detail View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-3.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Ancient Egyptian Cat Statue - Lifestyle View">
+                                        <img src="images/products/egyptian-cat-antique/Egyptian-Cat-statue-slide-3.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Ancient Egyptian Cat Statue - Lifestyle View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Lifestyle View</span></div>
                                     </div>
                                 </div>
@@ -941,15 +947,15 @@
                                 </div>
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/Pharoah-antique/pharaoh-antique-slide-1.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Pharaoh Antique Artifact - Main View">
+                                        <img src="images/products/Pharoah-antique/pharaoh-antique-slide-1.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Pharaoh Antique Artifact - Main View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Main View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/Pharoah-antique/pharaoh-antique-slide-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Pharaoh Antique Artifact - Detail View">
+                                        <img src="images/products/Pharoah-antique/pharaoh-antique-slide-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Pharaoh Antique Artifact - Detail View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Detail View</span></div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="images/products/Pharoah-antique/pharaoh-antique-slide-3.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Pharaoh Antique Artifact - Lifestyle View">
+                                        <img src="images/products/Pharoah-antique/pharaoh-antique-slide-3.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Pharaoh Antique Artifact - Lifestyle View">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Lifestyle View</span></div>
                                     </div>
                                 </div>
@@ -991,7 +997,7 @@
                             <div id="carouselProduct10" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-lantern.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Geometric Cutout Lantern">
+                                        <img src="images/products/ramadan-lantern.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Geometric Cutout Lantern">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -1031,7 +1037,7 @@
                             <div id="carouselProduct11" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-dates-bowl.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Golden Rim Dates Bowl">
+                                        <img src="images/products/ramadan-dates-bowl.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Golden Rim Dates Bowl">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -1073,7 +1079,7 @@
                             <div id="carouselProduct12" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-prayer-holder.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Minimalist Misbaha Holder">
+                                        <img src="images/products/ramadan-prayer-holder.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Minimalist Misbaha Holder">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -1113,7 +1119,7 @@
                             <div id="carouselProduct13" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-lantern-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Traditional Mashrabiya Lantern">
+                                        <img src="images/products/ramadan-lantern-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Traditional Mashrabiya Lantern">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -1153,7 +1159,7 @@
                             <div id="carouselProduct14" class="carousel slide" data-bs-interval="false">
                                 <div class="carousel-inner rounded overflow-hidden">
                                     <div class="carousel-item active">
-                                        <img src="images/products/ramadan-dates-bowl-2.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Speckled Date Selection Bowl">
+                                        <img src="images/products/ramadan-dates-bowl-2.webp" class="d-block w-100 object-fit-cover" loading="lazy" style="height: 400px;" alt="Speckled Date Selection Bowl">
                                         <div class="carousel-caption d-none d-md-block"><span class="badge bg-dark bg-opacity-50">Product View</span></div>
                                     </div>
                                 </div>
@@ -1213,10 +1219,10 @@
                         Handcrafted ceramics made with love by <span style="font-weight: 700; color: var(--warm-brown); font-style: normal;">Team 5 - C2C</span>.
                     </p>
                     <div class="footer-social mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -1244,7 +1250,7 @@
                     <h6 class="footer-title">Newsletter</h6>
                     <p class="footer-text mb-3">Subscribe for updates, offers, and new arrivals.</p>
                     <div class="d-flex">
-                        <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                        <input type="email" class="form-control newsletter-input" placeholder="Enter your email" aria-label="Email for newsletter">
                         <button class="btn btn-newsletter">Subscribe</button>
                     </div>
                 </div>

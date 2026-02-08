@@ -69,21 +69,7 @@
     background-color: var(--primary-hover);
 }
 
-/* ========== Add Product Button ========== */
-.btn-add-product {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    padding: 12px 25px;
-    font-size: 0.9rem;
-    transition: background-color 0.2s;
-}
 
-.btn-add-product:hover {
-    background-color: var(--primary-hover);
-    color: var(--white);
-}
 
 /* ========== View Product Button ========== */
 .btn-view-product {
