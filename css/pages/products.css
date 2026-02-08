@@ -6,19 +6,14 @@
    ========================================== */
 
 /* ========== Products Header ========== */
+/* ========== Products Header ========== */
 .products-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 25px;
-    flex-wrap: wrap;
-    gap: 15px;
 }
 
 .section-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
-    margin-bottom: 0;
     color: var(--text-dark);
 }
 
@@ -28,11 +23,6 @@
 }
 
 /* ========== Category Tabs ========== */
-.category-tabs {
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
 .category-tabs .nav-link {
     color: var(--text-dark);
     background-color: var(--cream);
@@ -65,13 +55,6 @@
     border-color: #D4AF37;
 }
 
-/* ========== Products Grid Layout ========== */
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-}
-
 /* ========== Sidebar Sticky ========== */
 @media (min-width: 992px) {
     .filters-sidebar {
@@ -91,39 +74,6 @@
     font-size: 4rem;
     margin-bottom: 20px;
     color: var(--light-tan);
-}
-
-/* ========== Pagination ========== */
-.products-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 40px;
-}
-
-.products-pagination .page-link {
-    color: var(--text-dark);
-    border-color: var(--warm-beige);
-    padding: 8px 14px;
-}
-
-.products-pagination .page-link:hover,
-.products-pagination .page-item.active .page-link {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--white);
-}
-
-/* ========== Responsive ========== */
-@media (max-width: 991.98px) {
-    .filters-sidebar {
-        margin-bottom: 30px;
-    }
-    
-    .products-header {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* ========== Custom Pagination ========== */
@@ -167,7 +117,7 @@
     filter: invert(1);
 }
 
-.font-serif {
+.font-serif, .font-cormorant {
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -178,10 +128,6 @@
 
 .lh-1-7 {
     line-height: 1.7;
-}
-
-.font-cormorant {
-    font-family: 'Cormorant Garamond', serif;
 }
 
 .sort-select {

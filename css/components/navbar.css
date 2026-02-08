@@ -81,11 +81,7 @@
 }
 
 /* ========== Nav Icons ========== */
-.nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+/* Layout handled by Bootstrap utilities */
 
 .nav-icon {
     color: var(--text-dark);

@@ -121,52 +121,12 @@ ul, ol {
 }
 
 /* ========== 3. Layout Utilities ========== */
-
-/* Flexbox Helpers */
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-center-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex-start {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.flex-end {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.gap-1 { gap: var(--spacer-xs); }
-.gap-2 { gap: var(--spacer-sm); }
-.gap-3 { gap: var(--spacer-md); }
-.gap-4 { gap: var(--spacer-lg); }
-.gap-5 { gap: var(--spacer-xl); }
+/* Using Bootstrap 5 standard utilities */
 
 /* ========== 4. Spacing Utilities ========== */
+/* Using Bootstrap 5 standard utilities */
 
-/* Section Padding */
+/* Section Padding - Custom semantic spacing */
 .section-padding {
     padding: 80px 0;
 }
@@ -175,65 +135,15 @@ ul, ol {
     padding: 40px 0;
 }
 
-/* Margins */
-.mt-0 { margin-top: 0; }
-.mt-1 { margin-top: var(--spacer-xs); }
-.mt-2 { margin-top: var(--spacer-sm); }
-.mt-3 { margin-top: var(--spacer-md); }
-.mt-4 { margin-top: var(--spacer-lg); }
-.mt-5 { margin-top: var(--spacer-xl); }
-
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: var(--spacer-xs); }
-.mb-2 { margin-bottom: var(--spacer-sm); }
-.mb-3 { margin-bottom: var(--spacer-md); }
-.mb-4 { margin-bottom: var(--spacer-lg); }
-.mb-5 { margin-bottom: var(--spacer-xl); }
-
 /* ========== 5. Typography Utilities ========== */
-
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-
-.text-primary { color: var(--primary-color); }
-.text-secondary { color: var(--secondary-color); }
-.text-success { color: var(--success-color); }
-.text-danger { color: var(--danger-color); }
-.text-warning { color: var(--warning-color); }
-.text-info { color: var(--info-color); }
-.text-muted { color: var(--text-muted); }
-.text-light { color: var(--text-light); }
-.text-dark { color: var(--dark-color); }
-
-.fw-light { font-weight: 300; }
-.fw-normal { font-weight: 400; }
-.fw-medium { font-weight: 500; }
-.fw-semibold { font-weight: 600; }
-.fw-bold { font-weight: 700; }
-
-.fs-sm { font-size: 0.875rem; }
-.fs-base { font-size: 1rem; }
-.fs-lg { font-size: 1.25rem; }
-.fs-xl { font-size: 1.5rem; }
+/* Using Bootstrap 5 standard utilities */
 
 /* ========== 6. Background Utilities ========== */
-
-.bg-primary { background-color: var(--primary-color); }
-.bg-secondary { background-color: var(--secondary-color); }
-.bg-success { background-color: var(--success-color); }
-.bg-danger { background-color: var(--danger-color); }
-.bg-warning { background-color: var(--warning-color); }
-.bg-info { background-color: var(--info-color); }
-.bg-light { background-color: var(--bg-light); }
-.bg-dark { background-color: var(--bg-dark); }
-.bg-white { background-color: #ffffff; }
+/* Custom background colors that map to variables */
 .bg-warm-beige { background-color: var(--warm-beige); }
-
-.text-warm-brown { color: var(--warm-brown); }
+.text-warm-brown { color: var(--primary-color); }
 
 /* ========== 7. Bilingual / Arabic Support ========== */
-
 .arabic-text,
 .rtl {
     direction: rtl;
@@ -246,8 +156,7 @@ ul, ol {
 }
 
 /* ========== 8. Ready Snippets ========== */
-
-/* Standard Card */
+/* Custom card effect not in standard Bootstrap */
 .ready-card {
     background-color: #fff;
     border-radius: var(--radius-md);
@@ -261,7 +170,6 @@ ul, ol {
     box-shadow: var(--shadow-md);
 }
 
-/* Content Container */
 .content-narrow {
     max-width: 800px;
     margin-left: auto;
@@ -274,14 +182,12 @@ ul, ol {
     margin-right: auto;
 }
 
-/* Divider */
 .divider {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
     margin: var(--spacer-lg) 0;
 }
 
-/* Text Gradient */
 .text-gradient {
     background: linear-gradient(45deg, var(--primary-color), var(--info-color));
     -webkit-background-clip: text;
@@ -290,25 +196,13 @@ ul, ol {
 }
 
 /* ========== 9. Button Extensions ========== */
-
 .btn-rounded {
     border-radius: var(--radius-pill);
 }
 
 /* ========== 10. Responsive Adjustments ========== */
-
 @media (max-width: 768px) {
     .section-padding {
         padding: 50px 0;
-    }
-    
-    .hide-mobile {
-        display: none !important;
-    }
-}
-
-@media (min-width: 769px) {
-    .hide-desktop {
-        display: none !important;
     }
 }
