@@ -405,9 +405,84 @@
 }
 
 /* ========== Keyframes ========== */
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        min-height: 400px;
+        order: -1;
+    }
+
+    .about-content {
+        padding: 60px 30px;
+    }
+
+    .instructor-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .instructor-img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .stats-grid {
+        justify-content: center;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .timeline-dot {
+        left: 10px; /* Adjusted to align with the line at 20px - half width (10px) */
+    }
+
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 10px;
+    }
+    
+    .instructor-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .instructor-img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title-large {
+        font-size: 2rem;
+    }
+    
+    .booking-card {
+        padding: 40px 20px;
     }
 }
