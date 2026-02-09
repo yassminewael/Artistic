@@ -28,12 +28,14 @@
     <!-- Page Specific CSS -->
     <link rel="stylesheet" href="css/pages/workshops.css">
 </head>
-<body id="top">
+<body id="top" class="workshop-page">
 
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">CERA</a>
+            <a class="navbar-brand" href="index.html">
+                CERA
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,13 +48,13 @@
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="aboutus.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="workshops.html">Workshops</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <div class="nav-icons d-flex align-items-center gap-3">
@@ -169,29 +171,42 @@
         </div>
     </section>
 
-    <!-- ========== BOOKING BAR ========== -->
-    <div id="booking" class="booking-bar">
+    <!-- ========== BOOKING SECTION (Artisan Theme) ========== -->
+    <section id="booking" class="booking-section">
         <div class="container">
-            <div class="booking-info">
-                <div class="info-item">
-                    <span class="info-label">Date</span>
-                    <span class="info-value"><i class="far fa-calendar-alt"></i> March 15-16</span>
+            <div class="booking-card artisan-theme">
+                <div class="booking-header">
+                    <span class="section-label">Secure Your Spot</span>
+                    <h2 class="booking-title">Reserve Your Wheel</h2>
+                    <p class="booking-subtitle">Limited to 8 spots for an intimate learning experience.</p>
                 </div>
-                <div class="info-item">
-                    <span class="info-label">Time</span>
-                    <span class="info-value"><i class="far fa-clock"></i> 10am - 4pm</span>
+                
+                <div class="booking-details-grid">
+                    <div class="detail-item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>March 15-16</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="far fa-clock"></i>
+                        <span>10:00 AM - 04:00 PM</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Maadi, Cairo</span>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-label">Location</span>
-                    <span class="info-value"><i class="fas fa-map-marker-alt"></i> Maadi, Cairo</span>
+
+                <div class="booking-action-row">
+                    <div class="price-display">
+                        <span class="currency">EGP</span>
+                        <span class="amount">2,400</span>
+                    </div>
+                    <button class="btn btn-hero btn-rounded w-100 py-3 shadow-none">Confirm Reservation</button>
+                    <p class="text-muted mt-3 mb-0 fs-sm text-center">Includes all materials, tools, and firing.</p>
                 </div>
-            </div>
-            <div class="booking-actions">
-                <span class="price-tag">2,400 EGP</span>
-                <button class="btn btn-hero btn-rounded py-2 px-4 shadow-none">Secure Spot</button>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ========== SCROLL TO TOP ========== -->
     <div class="back-to-top-container">
@@ -224,10 +239,10 @@
                 <div class="col-lg-2 col-md-6">
                     <h6 class="footer-title">Quick Links</h6>
                     <a href="index.html" class="footer-link">Home</a>
-                    <a href="#" class="footer-link">About Us</a>
+                    <a href="aboutus.html" class="footer-link">About Us</a>
                     <a href="products.html" class="footer-link">Products</a>
                     <a href="workshops.html" class="footer-link">Workshops</a>
-                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
                 </div>
                 
                 <!-- Customer Service -->

@@ -1,0 +1,197 @@
+/* ========== CONTACT PAGE STYLES ========== */
+
+/* 
+   Based on user's original design but refactored for
+   better maintainability and responsiveness.
+   Original file: contact.css
+*/
+
+.contact-page-wrapper {
+    /* background-color: var(--primary-light); -- replaced with gradient below */
+    background: linear-gradient(rgba(245, 240, 235, 0.9), rgba(196, 181, 165, 0.9)), url('../../images/contact/contact-bg-1.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background elements using FontAwesome icons */
+.contact-page-wrapper::before,
+.contact-page-wrapper::after {
+    content: '\f2f1'; /* FontAwesome pottery/sync icon as a placeholder for a circular ceramic shape */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 25rem;
+    color: rgba(139, 115, 85, 0.04);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-page-wrapper::before {
+    top: -100px;
+    left: -150px;
+    transform: rotate(-20deg);
+}
+
+.contact-page-wrapper::after {
+    bottom: -150px;
+    right: -150px;
+    transform: rotate(20deg);
+}
+
+/* Another floating shape for variety */
+.contact-page-wrapper::before {
+    content: '\f4d7'; /* Hands wash icon - feels like working with clay */
+}
+
+.contact-form-card, 
+.map-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Form Container Card */
+.contact-form-card {
+    width: 100%;
+    max-width: 500px; /* Replaced fixed 400px width with max-width */
+    background-color: var(--white);
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+    /* Font inherited from body, but specific overrides below */
+}
+
+/* Headings */
+.contact-form-card h2 {
+    color: var(--primary-color); /* #8B7355 */
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400; /* Fixed: was 300px */
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.contact-form-card p {
+    color: var(--text-dark); /* #3D3D3D */
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* Form Elements */
+.contact-form-card form {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group p {
+    font-size: 13px;
+    color: var(--text-dark); /* #3D3D3D */
+    margin-bottom: 6px;
+}
+
+.contact-form-card textarea {
+    resize: none;
+    height: 90px;
+    border: 2px solid var(--primary-light); /* #C4B5A5 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.2); /* Gray shadow */
+    width: 100%;
+    padding: 10px 12px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color var(--transition-fast);
+}
+
+.contact-form-card input {
+    border: 2px solid var(--primary-light); /* #C4B5A5 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.2);
+    height: 50px; /* Reduced specific height slightly for better propotion, was 60px */
+    width: 100%;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color var(--transition-fast);
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+    border-color: var(--primary-color); /* #8B7355 */
+}
+
+/* Button */
+.contact-form-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color); /* #8B7355 */
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color var(--transition-base);
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form-card button:hover {
+    background-color: var(--primary-hover); /* #5C4A3A */
+}
+
+/* Footer Span in Form */
+.contact-form-card span {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--text-dark); /* #3D3D3D */
+    font-size: 18px; /* Slightly reduced */
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Map Section */
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.location-heading {
+    color: var(--primary-color); /* #8B7355 */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.map-frame {
+    border: 3px solid var(--primary-light); /* #C4B5A5 */
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-form-card {
+        padding: 20px;
+    }
+    
+    .map-frame {
+        height: 300px;
+    }
+}

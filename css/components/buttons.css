@@ -325,9 +325,9 @@
     box-shadow: 0 4px 12px rgba(92, 74, 58, 0.25);
 }
 
-/* ========== Scroll to Top (CSS-Only Logic) ========== */
+/* ========== Scroll to Top  ========== */
 .back-to-top-container {
-    position: fixed; /* Changed to fixed so it stays in view */
+    position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 1050;

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CERA Home - Premium handcrafted ceramics made with love and tradition in Egypt">
+    <title>CERA Home - Handcrafted Ceramics</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles (CERA Palette) -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    
+    
+    <!-- Page-Specific CSS -->
+    <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+
+    <!-- ========== TOP BAR (ANNOUNCEMENT) ========== -->
+    <div class="top-bar">
+        <div class="container text-center">
+            <span>Ramadan Kareem! 🌙 Free shipping on all orders over 2,500 EGP</span>
+        </div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                CERA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshops.html">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-icons d-flex align-items-center gap-3">
+                    <a href="#" class="nav-icon" aria-label="Search" title="Search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon" aria-label="Wishlist" title="Wishlist"><i class="far fa-heart"></i></a>
+                    <a href="#" class="nav-icon" aria-label="Cart" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+                    
+                    <!-- Divider -->
+                    <div class="vr mx-3 text-secondary opacity-25 d-none d-lg-block"></div>
+                    
+                    <!-- Auth Actions -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none text-dark fw-medium fs-sm hover-primary">Login</a>
+                        <a href="#" class="btn btn-signup">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== FULL-WIDTH HERO SLIDER ========== -->
+    <section class="hero-slider-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Carousel Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1: Artisan Hands (Craftsmanship focus) -->
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background-image: url('images/home/slide-1.webp');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="container">
+                            <div class="hero-slide-content">
+                                <span class="hero-tagline">Handcrafted Perfection</span>
+                                <h1 class="hero-title">Where <span>Earth</span> Meets Artistry</h1>
+                                <p class="hero-description">Every curve, every texture tells a story of patience and passion. Discover ceramics that bring soul to your space.</p>
+                                <div class="hero-cta">
+                                    <a href="products.html" class="btn-hero-primary">Explore Collection</a>
+                                    <a href="aboutus.html" class="btn-hero-outline">Our Story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Finished Vases (Product focus) -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('images/home/slide-2.webp');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="container">
+                            <div class="hero-slide-content">
+                                <span class="hero-tagline">Timeless Elegance</span>
+                                <h1 class="hero-title">Designed for <span>Mindful</span> Living</h1>
+                                <p class="hero-description">Minimalist forms and organic textures that elevate your daily rituals. From morning coffee to evening gatherings.</p>
+                                <div class="hero-cta">
+                                    <a href="products.html" class="btn-hero-primary">Shop Vases</a>
+                                    <a href="products.html" class="btn-hero-outline">View All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Table Setting (Lifestyle focus) -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('images/home/slide-3.webp');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="container">
+                            <div class="hero-slide-content">
+                                <span class="hero-tagline">Table & Home</span>
+                                <h1 class="hero-title">Gather Around <span>Warmth</span></h1>
+                                <p class="hero-description">Create memorable dining experiences with our durable, high-fired stoneware collections. Made to be used and loved.</p>
+                                <div class="hero-cta">
+                                    <a href="products.html" class="btn-hero-primary">Shop Dinnerware</a>
+                                    <a href="workshops.html" class="btn-hero-outline">Join Workshop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls Removed as per user request -->
+        </div>
+    </section>
+
+    <!-- ========== BENTO GRID (FEATURED CATEGORIES) ========== -->
+    <section class="bento-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Explore</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-description">
+                    From elegant vases to functional dinnerware, find the perfect piece for every corner of your home.
+                </p>
+            </div>
+            <div class="bento-grid">
+                <!-- Main Featured Item - Artisan Vases (adjusted size) -->
+                <a href="products.html" class="bento-item bento-main">
+                    <img src="images/products/vase/vase-slide-2.webp" alt="Vases Collection" loading="lazy">
+                    <div class="bento-overlay">
+                        <span class="bento-category">Featured</span>
+                        <h3 class="bento-title">Artisan Vases</h3>
+                    </div>
+                    <div class="bento-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <!-- Bowls -->
+                <a href="products.html" class="bento-item">
+                    <img src="images/products/bowl/bowl-slide-1.webp" alt="Bowls Collection" loading="lazy">
+                    <div class="bento-overlay">
+                        <span class="bento-category">Collection</span>
+                        <h3 class="bento-title">Serving Bowls</h3>
+                    </div>
+                    <div class="bento-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <!-- Cups -->
+                <a href="products.html" class="bento-item">
+                    <img src="images/products/Cup-set/cup-set-slide-1.webp" alt="Cups Collection" loading="lazy">
+                    <div class="bento-overlay">
+                        <span class="bento-category">Collection</span>
+                        <h3 class="bento-title">Cups & Mugs</h3>
+                    </div>
+                    <div class="bento-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <!-- Planters -->
+                <a href="products.html" class="bento-item">
+                    <img src="images/products/planter/planter-slide-1.webp" alt="Planters Collection" loading="lazy">
+                    <div class="bento-overlay">
+                        <span class="bento-category">Collection</span>
+                        <h3 class="bento-title">Planters</h3>
+                    </div>
+                    <div class="bento-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED PRODUCTS ========== -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Best Sellers</span>
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-description">
+                    Our most loved pieces, handpicked for their exceptional craftsmanship and timeless design.
+                </p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card-home">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/vase/vase-slide-1.webp" alt="Minimalist Stone Vase" class="product-image" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h5 class="product-name">Minimalist Stone Vase</h5>
+                        <p class="product-price">1,450 EGP</p>
+                    </div>
+                </article>
+                <!-- Product 2 -->
+                <article class="product-card-home">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/bowl/bowl-slide-1.webp" alt="Handmade Serving Bowl" class="product-image" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h5 class="product-name">Handmade Serving Bowl</h5>
+                        <p class="product-price">950 EGP</p>
+                    </div>
+                </article>
+                <!-- Product 3 -->
+                <article class="product-card-home">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/Cup-set/cup-set-slide-1.webp" alt="Ceramic Cup Set" class="product-image" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h5 class="product-name">Ceramic Cup Set (4 pcs)</h5>
+                        <p class="product-price">1,250 EGP</p>
+                    </div>
+                </article>
+                <!-- Product 4 -->
+                <article class="product-card-home">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/planter/planter-slide-1.webp" alt="Terracotta Planter" class="product-image" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h5 class="product-name">Terracotta Planter</h5>
+                        <p class="product-price">850 EGP</p>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all-wrapper">
+                <a href="products.html" class="btn-view-all">
+                    View All Products <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CERA SECTION (New Trust Bar Design) ========== -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-bar">
+                <div class="trust-item">
+                    <i class="fas fa-truck"></i>
+                    <div class="trust-text">
+                        <h5>Free Shipping</h5>
+                        <p>Orders over 2,500 EGP</p>
+                    </div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <div class="trust-text">
+                        <h5>Handcrafted</h5>
+                        <p>By skilled artisans</p>
+                    </div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <i class="fas fa-leaf"></i>
+                    <div class="trust-text">
+                        <h5>Eco-Friendly</h5>
+                        <p>Sustainable materials</p>
+                    </div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <i class="fas fa-undo"></i>
+                    <div class="trust-text">
+                        <h5>Easy Returns</h5>
+                        <p>30-day policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== BACK TO TOP ========== -->
+    <div class="back-to-top-container">
+        <a href="#top" class="scroll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-cera">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand -->
+                <div class="col-lg-3 col-md-6">
+                <div class="footer-brand">
+                        CERA
+                    </div>
+                    <p class="footer-text footer-quote">
+                        Website made with love by <span class="footer-team-highlight">Team 5 - C2C</span>.
+                    </p>
+                    <div class="footer-social d-flex gap-3 mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="aboutus.html" class="footer-link">About Us</a>
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="workshops.html" class="footer-link">Workshops</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                </div>
+                
+                <!-- Customer Service -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Support</h6>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Shipping Info</a>
+                    <a href="#" class="footer-link">Returns</a>
+                    <a href="#" class="footer-link">Track Order</a>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-lg-5 col-md-6">
+                    <h6 class="footer-title">Newsletter</h6>
+                    <p class="footer-text mb-3">Subscribe for updates, offers, and new arrivals.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control newsletter-input" placeholder="Enter your email" aria-label="Email for newsletter">
+                        <button class="btn btn-newsletter">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom text-center">
+                <p class="footer-copyright mb-0">&copy; 2026 CERA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
