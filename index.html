@@ -90,9 +90,10 @@
 
     <!-- ========== FULL-WIDTH HERO SLIDER ========== -->
     <section class="hero-slider-section">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
+        <!-- Full-Width Slider (Now with Soft-Fade & Editorial Clean-up) -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <!-- Minimalist Indicators -->
+            <div class="carousel-indicators editorial-indicators">
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -101,54 +102,39 @@
             <!-- Carousel Slides -->
             <div class="carousel-inner">
                 <!-- Slide 1: Artisan Hands (Craftsmanship focus) -->
-                <div class="carousel-item active">
-                    <div class="hero-slide" style="background-image: url('images/home/slide-1.webp');">
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <div class="hero-slide zoom-bg" style="background-image: url('images/home/slide-1.webp');">
                         <div class="hero-slide-overlay"></div>
                         <div class="container">
-                            <div class="hero-slide-content">
+                            <div class="hero-slide-content text-center mx-auto">
                                 <span class="hero-tagline">Handcrafted Perfection</span>
                                 <h1 class="hero-title">Where <span>Earth</span> Meets Artistry</h1>
-                                <p class="hero-description">Every curve, every texture tells a story of patience and passion. Discover ceramics that bring soul to your space.</p>
-                                <div class="hero-cta">
-                                    <a href="products.html" class="btn-hero-primary">Explore Collection</a>
-                                    <a href="aboutus.html" class="btn-hero-outline">Our Story</a>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Slide 2: Finished Vases (Product focus) -->
-                <div class="carousel-item">
-                    <div class="hero-slide" style="background-image: url('images/home/slide-2.webp');">
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="hero-slide zoom-bg" style="background-image: url('images/home/slide-2.webp');">
                         <div class="hero-slide-overlay"></div>
                         <div class="container">
-                            <div class="hero-slide-content">
+                            <div class="hero-slide-content text-center mx-auto">
                                 <span class="hero-tagline">Timeless Elegance</span>
                                 <h1 class="hero-title">Designed for <span>Mindful</span> Living</h1>
-                                <p class="hero-description">Minimalist forms and organic textures that elevate your daily rituals. From morning coffee to evening gatherings.</p>
-                                <div class="hero-cta">
-                                    <a href="products.html" class="btn-hero-primary">Shop Vases</a>
-                                    <a href="products.html" class="btn-hero-outline">View All</a>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Slide 3: Table Setting (Lifestyle focus) -->
-                <div class="carousel-item">
-                    <div class="hero-slide" style="background-image: url('images/home/slide-3.webp');">
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="hero-slide zoom-bg" style="background-image: url('images/home/slide-3.webp');">
                         <div class="hero-slide-overlay"></div>
                         <div class="container">
-                            <div class="hero-slide-content">
+                            <div class="hero-slide-content text-center mx-auto">
                                 <span class="hero-tagline">Table & Home</span>
                                 <h1 class="hero-title">Gather Around <span>Warmth</span></h1>
-                                <p class="hero-description">Create memorable dining experiences with our durable, high-fired stoneware collections. Made to be used and loved.</p>
-                                <div class="hero-cta">
-                                    <a href="products.html" class="btn-hero-primary">Shop Dinnerware</a>
-                                    <a href="workshops.html" class="btn-hero-outline">Join Workshop</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -172,7 +158,7 @@
             <div class="bento-grid">
                 <!-- Main Featured Item - Artisan Vases (adjusted size) -->
                 <a href="products.html" class="bento-item bento-main">
-                    <img src="images/products/vase/vase-slide-2.webp" alt="Vases Collection" loading="lazy">
+                    <img src="images/products/ramadan-lantern.webp" alt="Vases Collection" loading="lazy">
                     <div class="bento-overlay">
                         <span class="bento-category">Featured</span>
                         <h3 class="bento-title">Artisan Vases</h3>
