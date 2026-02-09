@@ -76,18 +76,18 @@
     </nav>
 
     <!-- ========== HERO SECTION ========== -->
-    <header class="workshop-hero" style="background-image: url('images/workshop/hero-image-pottery.webp');">
-        <div class="hero-content">
-            <span class="hero-label">Weekend Intensive</span>
-            <h1 class="hero-title">The Art of<br>Wheel Throwing</h1>
-            <p class="mb-4 fs-5 opacity-75">Connect with the clay. Master the center.</p>
-            <a href="#booking" class="btn btn-hero btn-rounded">Reserve Your Wheel</a>
+    <header class="workshop-hero">
+        <div class="workshop-hero__content">
+            <span class="workshop-hero__label">Weekend Intensive</span>
+            <h1 class="workshop-hero__title">The Art of<br>Wheel Throwing</h1>
+            <p class="workshop-hero__description">Connect with the clay. Master the center.</p>
+            <a href="#booking" class="btn btn-hero btn-rounded workshop-hero__cta">Reserve Your Wheel</a>
         </div>
     </header>
 
     <!-- ========== ABOUT THE WORKSHOP ========== -->
     <section class="about-grid">
-        <div class="about-content">
+        <div class="about-grid__content">
             <span class="section-label">The Experience</span>
             <h2 class="section-title-large">More Than Just Pottery</h2>
             <p class="text-content mb-4">
@@ -97,7 +97,7 @@
                 We focus on the meditative aspect of the wheel—learning to listen to the clay, finding your center, and shaping the earth with your own hands.
             </p>
         </div>
-        <img src="images/workshop/hands-on-pottery.webp" alt="Hands on pottery wheel" class="about-image">
+        <img src="images/workshop/hands-on-pottery.webp" alt="Hands on pottery wheel" class="about-grid__image">
     </section>
 
     <!-- ========== CURRICULUM TIMELINE ========== -->
@@ -110,33 +110,33 @@
 
             <div class="timeline">
                 <!-- Day 1 Morning -->
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <span class="time-label">09:00 AM — Theory</span>
+                <div class="timeline__item">
+                    <span class="timeline__dot"></span>
+                    <span class="timeline__time">09:00 AM — Theory</span>
                     <h4 class="font-cormorant">Understanding Clay Bodies</h4>
                     <p class="text-muted">Introduction to different types of clay, wedging techniques, and preparing your station.</p>
                 </div>
 
                 <!-- Day 1 Afternoon -->
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <span class="time-label">11:30 AM — Practice</span>
+                <div class="timeline__item">
+                    <span class="timeline__dot"></span>
+                    <span class="timeline__time">11:30 AM — Practice</span>
                     <h4 class="font-cormorant">Centering on the Wheel</h4>
                     <p class="text-muted">The most critical skill. Learn how to force the clay into perfect submission before shaping.</p>
                 </div>
 
                 <!-- Day 1 Late -->
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <span class="time-label">02:00 PM — Creation</span>
+                <div class="timeline__item">
+                    <span class="timeline__dot"></span>
+                    <span class="timeline__time">02:00 PM — Creation</span>
                     <h4 class="font-cormorant">Opening & Pulling Walls</h4>
                     <p class="text-muted">Transforming your centered lump into a cylinder. The foundation of vases, mugs, and bowls.</p>
                 </div>
 
                 <!-- Day 2 -->
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <span class="time-label">Day 2 — finish</span>
+                <div class="timeline__item">
+                    <span class="timeline__dot"></span>
+                    <span class="timeline__time">Day 2 — finish</span>
                     <h4 class="font-cormorant">Trimming & Refining</h4>
                     <p class="text-muted">Returning to your leather-hard pieces to trim the feet and refine the shape before firing.</p>
                 </div>
@@ -148,22 +148,22 @@
     <section class="instructor-section">
         <div class="container">
             <div class="instructor-grid">
-                <img src="images/workshop/Layla.webp" alt="Layla Ahmed" class="instructor-img">
-                <div>
+                <img src="images/workshop/Layla.webp" alt="Layla Ahmed" class="instructor-grid__img">
+                <div class="instructor-grid__content">
                     <span class="section-label">Your Instructor</span>
                     <h2 class="section-title-large">Layla Ahmed</h2>
-                    <p class="instructor-quote">"Pottery isn't just about making things. It's about how the act of making shapes us in return."</p>
+                    <p class="instructor-grid__quote">"Pottery isn't just about making things. It's about how the act of making shapes us in return."</p>
                     <p class="text-muted mb-4">
                         With over 15 years of experience in Cairo's ceramic scene, Layla combines traditional Egyptian techniques with modern minimalism. Her work has been featured in galleries across the MENA region.
                     </p>
                     <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Years Exp</span>
+                        <div class="stats-grid__item">
+                            <span class="stats-grid__number">15+</span>
+                            <span class="stats-grid__label">Years Exp</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Students</span>
+                        <div class="stats-grid__item">
+                            <span class="stats-grid__number">500+</span>
+                            <span class="stats-grid__label">Students</span>
                         </div>
                     </div>
                 </div>
@@ -175,31 +175,31 @@
     <section id="booking" class="booking-section">
         <div class="container">
             <div class="booking-card artisan-theme">
-                <div class="booking-header">
+                <div class="booking-card__header">
                     <span class="section-label">Secure Your Spot</span>
-                    <h2 class="booking-title">Reserve Your Wheel</h2>
-                    <p class="booking-subtitle">Limited to 8 spots for an intimate learning experience.</p>
+                    <h2 class="booking-card__title">Reserve Your Wheel</h2>
+                    <p class="booking-card__subtitle">Limited to 8 spots for an intimate learning experience.</p>
                 </div>
                 
-                <div class="booking-details-grid">
-                    <div class="detail-item">
+                <div class="booking-details">
+                    <div class="booking-details__item">
                         <i class="far fa-calendar-alt"></i>
                         <span>March 15-16</span>
                     </div>
-                    <div class="detail-item">
+                    <div class="booking-details__item">
                         <i class="far fa-clock"></i>
                         <span>10:00 AM - 04:00 PM</span>
                     </div>
-                    <div class="detail-item">
+                    <div class="booking-details__item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Maadi, Cairo</span>
                     </div>
                 </div>
 
-                <div class="booking-action-row">
+                <div class="booking-actions">
                     <div class="price-display">
-                        <span class="currency">EGP</span>
-                        <span class="amount">2,400</span>
+                        <span class="price-display__currency">EGP</span>
+                        <span class="price-display__amount">2,400</span>
                     </div>
                     <button class="btn btn-hero btn-rounded w-100 py-3 shadow-none">Confirm Reservation</button>
                     <p class="text-muted mt-3 mb-0 fs-sm text-center">Includes all materials, tools, and firing.</p>

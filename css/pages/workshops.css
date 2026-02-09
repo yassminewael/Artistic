@@ -1,19 +1,40 @@
 /* ==========================================================================
-   Workshops Page Styles (Redesign - Single Workshop Landing)
+   Workshops Page Styles (Refactored - BEM & Variables)
    ========================================================================== */
 
-/* ========== General Overrides ========== */
+:root {
+    --workshop-primary: var(--primary-color, #8B7355);
+    --workshop-bg-cream: var(--cream, #f9f9f9);
+    --workshop-text-dark: var(--text-dark, #333);
+    --workshop-text-muted: var(--text-muted, #777);
+    --workshop-border-light: rgba(139, 115, 85, 0.2);
+    --workshop-spacing-section: 100px;
+    --workshop-font-serif: 'Cormorant Garamond', serif;
+}
+
+/* ========== General Utilities ========== */
 .section-title-large {
     font-size: 2.5rem;
     margin-bottom: 30px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--workshop-primary);
+    font-family: var(--workshop-font-serif);
 }
 
 .text-content {
     font-size: 1.1rem;
-    color: var(--text-dark);
+    color: var(--workshop-text-dark);
     line-height: 1.8;
+}
+
+.section-label {
+    display: block;
+    text-transform: uppercase;
+    color: var(--workshop-primary);
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
 }
 
 /* ========== Artisan Grain Texture ========== */
@@ -30,95 +51,111 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-/* Animation Removed for Optimization */
-
-.section-label {
-    display: block;
-    text-transform: uppercase;
-    color: var(--primary-color);
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-}
-
-/* ========== Immersive Hero ========== */
+/* ========== Hero Section ========== */
 .workshop-hero {
     position: relative;
     height: 85vh;
     width: 100%;
-    background: center/cover no-repeat;
+    /* Background moved to .workshop-hero__bg */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: var(--white, #fff);
     text-align: center;
     overflow: hidden;
 }
 
-/* Overlay */
-.workshop-hero::before {
-    content: '';
-    position: absolute;
+.workshop-hero__bg {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: url('../../images/workshop/hero-image-pottery.webp') center/cover no-repeat;
+    z-index: -1;
+    pointer-events: none;
+    will-change: transform; /* Hint for smoother scrolling */
+}
+
+
+.workshop-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
 }
 
-.hero-content {
+.workshop-hero__content {
     position: relative;
     z-index: 2;
     max-width: 800px;
     padding: 0 20px;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s ease forwards 0.5s;
 }
 
-.hero-label {
+/* Hero Animations */
+.workshop-hero__label,
+.workshop-hero__title,
+.workshop-hero__description,
+.workshop-hero__cta {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.workshop-hero__label {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 0.9rem;
     margin-bottom: 20px;
     display: block;
     font-weight: 600;
+    animation-delay: 0.1s;
 }
 
-.hero-title {
+.workshop-hero__title {
     font-size: 4.5rem;
     line-height: 1.1;
     margin-bottom: 30px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--workshop-font-serif);
+    animation-delay: 0.3s;
 }
 
-/* ========== About Section (Split Layout) ========== */
+.workshop-hero__description {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.75;
+    animation-delay: 0.5s;
+}
+
+.workshop-hero__cta {
+    animation-delay: 0.7s;
+}
+
+/* ========== About Section ========== */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0; 
 }
 
-.about-image {
+.about-grid__image {
     width: 100%;
     height: 100%;
     min-height: 600px;
     object-fit: cover;
 }
 
-.about-content {
+.about-grid__content {
     padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--cream);
+    background-color: var(--workshop-bg-cream);
 }
 
 /* ========== Curriculum / Timeline ========== */
 .curriculum-section {
     background-color: #fff;
-    padding: 100px 0;
+    padding: var(--workshop-spacing-section) 0;
 }
 
 .timeline {
@@ -136,11 +173,11 @@
     bottom: 0;
     left: 50%;
     width: 2px;
-    background-color: var(--light-tan);
+    background-color: #d2c8be; /* Light tan fallback */
     transform: translateX(-50%);
 }
 
-.timeline-item {
+.timeline__item {
     position: relative;
     margin-bottom: 60px;
     width: 50%;
@@ -148,163 +185,146 @@
     text-align: right;
 }
 
-.timeline-item:nth-child(even) {
+.timeline__item:nth-child(even) {
     left: 50%;
     padding-right: 0;
     padding-left: 40px;
     text-align: left;
 }
 
-/* Timeline Dot */
-.timeline-dot {
+.timeline__dot {
     position: absolute;
     top: 0;
     right: -10px;
     width: 20px;
     height: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--workshop-primary);
     border-radius: 50%;
     border: 4px solid #fff;
-    box-shadow: 0 0 0 1px var(--light-tan);
+    box-shadow: 0 0 0 1px #d2c8be;
     z-index: 2;
 }
 
-.timeline-item:nth-child(even) .timeline-dot {
+.timeline__item:nth-child(even) .timeline__dot {
     right: auto;
     left: -10px;
 }
 
-.time-label {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.7rem; /* Increased size */
+.timeline__time {
+    font-family: var(--workshop-font-serif);
+    font-size: 1.7rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--workshop-primary);
     margin-bottom: 5px;
     display: block;
-    font-style: italic; /* Added italic for "journal" feel */
+    font-style: italic;
 }
 
 /* ========== Instructor Section ========== */
 .instructor-section {
-    background-color: var(--warm-beige); /* Changed from dark to light beige */
-    color: var(--text-dark);
-    padding: 100px 0;
+    background-color: #f0ebe4; /* Warm beige */
+    color: var(--workshop-text-dark);
+    padding: var(--workshop-spacing-section) 0;
     border-top: 1px solid rgba(139, 115, 85, 0.1);
 }
 
 .instructor-grid {
     display: grid;
     grid-template-columns: 400px 1fr;
-    gap: 80px; /* Increased gap */
+    gap: 80px;
     align-items: center;
 }
 
-.instructor-img {
+.instructor-grid__img {
     width: 100%;
-    border-radius: var(--radius-lg);
+    border-radius: 8px;
     filter: sepia(20%);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-.instructor-quote {
+.instructor-grid__quote {
     font-size: 1.8rem;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--workshop-font-serif);
     font-style: italic;
     opacity: 0.9;
     margin-bottom: 30px;
     line-height: 1.4;
 }
 
-/* Enhanced Stats */
+/* Stats */
 .stats-grid {
     display: flex;
     gap: 60px;
     margin-top: 40px;
     padding-top: 30px;
-    border-top: 1px solid rgba(139, 115, 85, 0.2);
+    border-top: 1px solid var(--workshop-border-light);
 }
 
-.stat-item {
+.stats-grid__item {
     display: flex;
     flex-direction: column;
 }
 
-.stat-number {
+.stats-grid__number {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--workshop-primary);
     line-height: 1;
     margin-bottom: 5px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--workshop-font-serif);
 }
 
-.stat-label {
+.stats-grid__label {
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 2px;
-    color: var(--text-muted);
+    color: var(--workshop-text-muted);
     font-weight: 500;
 }
 
-/* ========== Booking Section (Artisan Theme) ========== */
+/* ========== Booking Section ========== */
 .booking-section {
     padding: 80px 0;
     background-color: #fff;
-    position: relative;
 }
 
-/* Artisan Card Design - Light & Elegant */
 .booking-card {
     background: #fff;
-    border: 1px solid rgba(139, 115, 85, 0.2); /* Thin gold border */
-    border-radius: 4px; /* Sharper corners for paper feel */
+    border: 1px solid var(--workshop-border-light);
+    border-radius: 4px;
     padding: 60px;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    box-shadow: 0 10px 30px rgba(139, 115, 85, 0.05); /* Very soft shadow */
+    box-shadow: 0 10px 30px rgba(139, 115, 85, 0.05);
 }
 
-/* Decorative inner border for "Invitation" look */
 .booking-card::after {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+    inset: 10px;
     border: 1px solid rgba(139, 115, 85, 0.1);
     pointer-events: none;
 }
 
-.booking-title {
-    font-family: 'Cormorant Garamond', serif;
+.booking-card__title {
+    font-family: var(--workshop-font-serif);
     font-size: 3.5rem;
     margin-bottom: 5px;
-    color: var(--primary-color);
+    color: var(--workshop-primary);
     letter-spacing: -1px;
 }
 
-.section-label {
-    display: inline-block;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-muted);
-    margin-bottom: 15px;
-}
-
-.booking-subtitle {
-    color: var(--text-muted);
+.booking-card__subtitle {
+    color: var(--workshop-text-muted);
     font-size: 1.1rem;
     font-style: italic;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--workshop-font-serif);
     margin-bottom: 40px;
 }
 
-.booking-details-grid {
+.booking-details {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -313,8 +333,7 @@
     position: relative;
 }
 
-/* Separator line */
-.booking-details-grid::after {
+.booking-details::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -322,34 +341,32 @@
     transform: translateX(-50%);
     width: 60px;
     height: 1px;
-    background-color: var(--primary-color);
+    background-color: var(--workshop-primary);
     opacity: 0.3;
 }
 
-.detail-item {
+.booking-details__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
 
-.detail-item i {
+.booking-details__item i {
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: var(--workshop-primary);
     opacity: 0.8;
 }
 
-.detail-item span {
-    font-size: 1rem;
+.booking-details__item span {
+    font-size: 0.85rem;
     font-weight: 500;
-    color: var(--text-dark);
+    color: var(--workshop-text-dark);
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    font-size: 0.85rem;
 }
 
-/* Action Row */
-.booking-action-row {
+.booking-actions {
     max-width: 450px;
     margin: 0 auto;
 }
@@ -358,75 +375,77 @@
     margin-bottom: 25px;
 }
 
-.price-display .currency {
+.price-display__currency {
     font-size: 1.2rem;
     vertical-align: top;
-    color: var(--text-muted);
-    font-family: 'Cormorant Garamond', serif;
+    color: var(--workshop-text-muted);
+    font-family: var(--workshop-font-serif);
 }
 
-.price-display .amount {
+.price-display__amount {
     font-size: 3rem;
     font-weight: 600;
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--text-dark);
+    font-family: var(--workshop-font-serif);
+    color: var(--workshop-text-dark);
 }
 
-/* Responsive Booking Section */
-@media (max-width: 768px) {
-    .booking-card {
-        padding: 40px 20px;
-        border: none;
-        box-shadow: none;
-        background: transparent;
-    }
-    
-    .booking-card::after { display: none; }
-
-    .booking-title {
-        font-size: 2.5rem;
-    }
-
-    .booking-details-grid {
-        flex-direction: column;
-        gap: 25px;
-        margin-bottom: 30px;
-    }
-
-    .detail-item {
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .price-display .amount {
-        font-size: 2.5rem;
+/* ========== Animations ========== */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* ========== Keyframes ========== */
-/* Responsive Adjustments */
+/* ========== Responsive Adjustments ========== */
 @media (max-width: 991.98px) {
     .about-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-image {
+    .about-grid__image {
         min-height: 400px;
         order: -1;
     }
 
-    .about-content {
+    .about-grid__content {
         padding: 60px 30px;
     }
 
+    /* Timeline Mobile */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline__item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline__item:nth-child(even) {
+        left: 0;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .timeline__dot {
+        left: 10px;
+    }
+
+    .timeline__item:nth-child(even) .timeline__dot {
+        left: 10px;
+    }
+
+    /* Instructor Mobile */
     .instructor-grid {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
     }
 
-    .instructor-img {
+    .instructor-grid__img {
         max-width: 300px;
         margin: 0 auto;
     }
@@ -434,55 +453,45 @@
     .stats-grid {
         justify-content: center;
     }
-    
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .timeline-item:nth-child(even) {
-        left: 0;
-        text-align: left;
-        padding-left: 50px;
-    }
-
-    .timeline-dot {
-        left: 10px; /* Adjusted to align with the line at 20px - half width (10px) */
-    }
-
-    .timeline-item:nth-child(even) .timeline-dot {
-        left: 10px;
-    }
-    
-    .instructor-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .instructor-img {
-        max-width: 80%;
-        margin-bottom: 20px;
-    }
 }
 
 @media (max-width: 767.98px) {
-    .hero-title {
+    .workshop-hero {
+        height: 70vh; /* Reduced from 85vh to prevent extreme zooming */
+        background-position: center top; /* Focus on the top part of the image */
+    }
+
+    .workshop-hero__title {
         font-size: 3rem;
     }
     
-    .section-title-large {
+    .section-title-large,
+    .booking-card__title {
         font-size: 2rem;
     }
     
     .booking-card {
         padding: 40px 20px;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .booking-card::after { display: none; }
+
+    .booking-details {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .booking-details__item {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .price-display__amount {
+        font-size: 2.5rem;
     }
 }
