@@ -69,7 +69,7 @@
 
 @media (min-width: 992px) {
     .workshop-hero {
-        background-attachment: fixed; /* Parallax effect on desktop */
+        background-attachment: fixed;
     }
 }
 
@@ -451,11 +451,6 @@
 }
 
 @media (max-width: 767.98px) {
-    .workshop-hero {
-        height: 70vh; /* Reduced from 85vh to prevent extreme zooming */
-        background-position: center top; /* Focus on the top part of the image */
-    }
-
     .workshop-hero__title {
         font-size: 3rem;
     }
