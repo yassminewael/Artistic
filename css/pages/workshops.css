@@ -64,9 +64,14 @@
     text-align: center;
     overflow: hidden;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
+@media (min-width: 992px) {
+    .workshop-hero {
+        background-attachment: fixed; /* Parallax effect on desktop */
+    }
+}
 
 .workshop-hero::before {
     content: '';
