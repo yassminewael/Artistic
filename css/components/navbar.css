@@ -1,5 +1,5 @@
 /* ==========================================
-   CERA Home - Navbar Component
+   Artistic Home - Navbar Component
    ==========================================
    Reusable navigation bar styles
    Dependencies: styles.css (variables)
@@ -40,18 +40,6 @@
     position: relative;
     padding: 0;
     margin-right: 0;
-}
-
-/* Optional: Add a subtle dot to the logo */
-.navbar-custom .navbar-brand::after {
-    content: '';
-    display: inline-block;
-    width: 4px; /* Proportional */
-    height: 4px; /* Proportional */
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-bottom: 5px;
 }
 
 /* Remove the old 'home' span styling if it exists in HTML */

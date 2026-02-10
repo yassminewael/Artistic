@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact CERA - Get in touch with our team">
-    <title>Contact Us - CERA</title>
+    <meta name="description" content="Contact Artistic - Get in touch with our team">
+    <title>Contact Us - Artistic</title>
     
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- Main Styles (CERA Palette) -->
+    <!-- Main Styles (Artistic Palette) -->
     <link rel="stylesheet" href="css/styles.css">
     
     <!-- Component CSS -->
@@ -36,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                CERA
+                Artistic
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -69,8 +69,8 @@
                     
                     <!-- Auth Actions -->
                     <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="text-decoration-none text-dark fw-medium fs-sm hover-primary">Login</a>
-                        <a href="#" class="btn btn-signup">Sign Up</a>
+                        <a href="Login.html" class="text-decoration-none text-dark fw-medium fs-sm hover-primary">Login</a>
+                        <a href="Login.html#signup" class="btn btn-signup">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -79,38 +79,99 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <main class="contact-page-wrapper">
-        <div class="contact-form-card">
-            <h2>Contact Us</h2>
-            <p>We’re happy to connect with you!</p>
-            <form action="">
-                <div class="form-group fname">
-                    <p>First name</p>
-                    <input type="text">
+        <div class="contact-box container">
+            <div class="contact-main-card">
+                <div class="row g-0">
+                    <!-- Left Column: Contact Info -->
+                    <div class="col-lg-5 col-md-6 contact-info-col">
+                        <div class="contact-info-content">
+                            <h2>Get In Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitdicta</p>
+                            
+                            <div class="contact-details mt-4">
+                                <div class="info-row">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>0102347585576</p>
+                                </div>
+                                <div class="info-row">
+                                    <i class="fa-solid fa-at"></i>
+                                    <p>Cera450@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="social-follow mt-5">
+                                <p>Follow us on</p>
+                                <div class="social-icons">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-threads"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="col-lg-7 col-md-6 contact-form-col">
+                        <div class="contact-form-wrapper">
+                            <h2>Contact Us</h2>
+                            <p>We’re happy to connect with you!</p>
+                            
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group fname">
+                                            <p>First name</p>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group lname">
+                                            <p>Last name</p>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group email mb-3">
+                                    <div class="label-box">
+                                        <i class="fa-solid fa-at"></i>
+                                        <p>Email</p>
+                                    </div>
+                                    <input type="email" class="form-control">
+                                </div>
+                                
+                                <div class="form-group phone mb-3">
+                                    <div class="label-box">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>Phone</p>
+                                    </div>
+                                    <input type="tel" class="form-control">
+                                </div>
+                                
+                                <div class="form-group address mb-3">
+                                    <div class="label-box">
+                                        <i class="fa-solid fa-house"></i>
+                                        <p>Address</p>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group message mb-4">
+                                    <div class="label-box">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>Message</p>
+                                    </div>
+                                    <textarea class="form-control" placeholder="leave your comment"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit">Let’s talk</button>
+                                <span>Thank you for trusting our products</span>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group lname">
-                    <p>Last name</p>
-                    <input type="text">
-                </div>
-                <div class="form-group email">
-                    <p>Email</p>
-                    <input type="email">
-                </div>
-                <div class="form-group phone">
-                    <p>Phone</p>
-                    <input type="tel">
-                </div>
-                <div class="form-group address">
-                    <p>Address</p>
-                    <input type="text">
-                </div>
-                <div class="form-group massage">
-                    <p>Message</p>
-                    <textarea placeholder="leave your comment"></textarea>
-                    <br><br>
-                    <button type="submit">Let’s talk</button>
-                    <span>Thank you for trusting our products</span>
-                </div>
-            </form>
+            </div>
         </div>
 
         <div class="map-container">
@@ -136,13 +197,13 @@
     </div>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="footer-cera">
+    <footer class="footer-artistic">
         <div class="container">
             <div class="row g-4">
                 <!-- Brand -->
                 <div class="col-lg-3 col-md-6">
                 <div class="footer-brand">
-                        CERA
+                        Artistic
                     </div>
                     <p class="footer-text footer-quote">
                         Website made with love by <span class="footer-team-highlight">Team 5 - C2C</span>.
@@ -187,7 +248,7 @@
             
             <!-- Copyright -->
             <div class="footer-bottom text-center">
-                <p class="footer-copyright mb-0">&copy; 2026 CERA. All rights reserved.</p>
+                <p class="footer-copyright mb-0">&copy; 2026 Artistic. All rights reserved.</p>
             </div>
         </div>
     </footer>

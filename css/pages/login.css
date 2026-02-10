@@ -1,0 +1,260 @@
+/* ========== LOGIN PAGE STYLES ========== */
+body {
+    background-color: var(--cream);
+    /* Subtle texture or pattern can be added here if needed */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Auth Section */
+.auth-section {
+    flex: 1;
+    padding: 60px 0;
+    position: relative;
+    /* Optional: Add a subtle background pattern or gradient matching brand */
+    /* Background Image from Brain (Pottery Theme) */
+    background: linear-gradient(rgba(245, 240, 235, 0.8), rgba(196, 181, 165, 0.8)), url('../../images/login/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Card Wrapper */
+.auth-card-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(92, 74, 58, 0.1); /* Warm shadow */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Toggle Mechanism (Radio Buttons) */
+input[type="radio"] {
+    display: none;
+}
+
+/* Tabs */
+.auth-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--warm-beige); /* #E8DED4 */
+    padding-bottom: 0;
+}
+
+.auth-tabs label {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 10px;
+    transition: all var(--transition-base);
+    color: var(--text-muted); /* #7A7A7A */
+    margin-bottom: -2px; /* Overlap border */
+    border-bottom: 2px solid transparent;
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+    text-align: center;
+}
+
+.auth-tabs label:hover {
+    color: var(--primary-color);
+}
+
+
+
+/* Forms Container */
+.forms {
+    position: relative;
+    height: 365px; /* Adjusted height for content */
+    overflow: hidden;
+}
+
+/* Individual Forms */
+.login-form,
+.signup-form {
+    position: absolute;
+    width: 100%;
+    transition: left 0.5s ease-in-out;
+    background-color: var(--white); /* Ensure no transparency overlap */
+    top: 0;
+}
+
+.login-form {
+    left: 0;
+}
+
+.signup-form {
+    left: 100%; /* Start off-screen */
+}
+
+/* =========================================
+   Slide Effect Logic (CSS State Machine)
+   ========================================= */
+
+/* --- Default State: Login View --- */
+/* These rules apply when neither input is checked/targeted (initial load) */
+.forms .login-form {
+    left: 0;
+}
+.forms .signup-form {
+    left: 120%; /* Hidden to the right */
+}
+.auth-tabs label[for="login"] {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.auth-tabs label[for="signup"] {
+    color: var(--text-muted);
+    border-bottom: 2px solid transparent;
+}
+
+/* --- Signup State: When #signup is Checked OR Targeted --- */
+/* 
+   Logic: If URL has #signup, :target activates.
+   If user clicks Signup tab, :checked activates.
+   Both trigger the same view.
+*/
+#signup:checked ~ .forms .login-form,
+#signup:target ~ .forms .login-form {
+    left: -120%; /* Login slides out to left */
+}
+#signup:checked ~ .forms .signup-form,
+#signup:target ~ .forms .signup-form {
+    left: 0;     /* Signup slides in */
+}
+
+/* Tab Styling for Signup State */
+#signup:checked ~ .auth-tabs label[for="signup"],
+#signup:target ~ .auth-tabs label[for="signup"] {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+#signup:checked ~ .auth-tabs label[for="login"],
+#signup:target ~ .auth-tabs label[for="login"] {
+    color: var(--text-muted);
+    border-bottom: 2px solid transparent; /* Deactivate Login tab */
+}
+
+/* --- Explicit Login State: When #login is Checked --- */
+/* 
+   CRITICAL: This block must come LAST to override the :target state.
+   Scenario: URL is #signup (Target Active), but User clicks "Login" (Checked Active).
+   User intent (Click) > URL Hash.
+*/
+#login:checked ~ .forms .login-form {
+    left: 0 !important;
+}
+#login:checked ~ .forms .signup-form {
+    left: 120% !important;
+}
+
+/* Tab Styling for Explicit Login State */
+#login:checked ~ .auth-tabs label[for="login"] {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+}
+#login:checked ~ .auth-tabs label[for="signup"] {
+    color: var(--text-muted) !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Typography */
+h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Inputs */
+.form-control {
+    border: 2px solid var(--light-tan); /* #C4B5A5 */
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(139, 115, 85, 0.1); /* Brand focus glow */
+    background-color: var(--white);
+}
+
+.form-control::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 4px rgba(139, 115, 85, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* Buttons */
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color var(--transition-base), transform var(--transition-fast);
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+.btn-auth:hover {
+    background-color: var(--primary-hover);
+    color: var(--white);
+}
+
+/* Switch Auth Link */
+.switch-auth-label {
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.switch-auth-label:hover span {
+    color: var(--primary-color) !important;
+}
+
+/* Links */
+.hover-primary:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Navbar overrides for this page if needed */
+.navbar-custom {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Ensure navbar stands out slightly on cream bg */
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 30px 20px;
+    }
+    
+    .forms {
+        height: 400px; /* Slight increase for mobile spacing */
+    }
+}

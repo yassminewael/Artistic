@@ -1,12 +1,12 @@
 /* ==========================================
-   CERA Home - Footer Component
+   Artistic Home - Footer Component
    ==========================================
    Reusable footer styles
    Dependencies: styles.css (variables)
    ========================================== */
 
 /* ========== Footer Container ========== */
-.footer-cera {
+.footer-artistic {
     background-color: var(--footer-dark);
     color: var(--white);
     padding: 60px 0 30px;
@@ -109,7 +109,7 @@
 
 /* ========== Responsive ========== */
 @media (max-width: 767.98px) {
-    .footer-cera {
+    .footer-artistic {
         padding: 40px 0 20px;
         text-align: center;
     }
