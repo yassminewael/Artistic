@@ -14,7 +14,7 @@ body {
     position: relative;
     /* Optional: Add a subtle background pattern or gradient matching brand */
     /* Background Image from Brain (Pottery Theme) */
-    background: linear-gradient(rgba(245, 240, 235, 0.8), rgba(196, 181, 165, 0.8)), url('../../images/login/bg.png');
+    background: linear-gradient(rgba(245, 240, 235, 0.8), rgba(196, 181, 165, 0.8)), url('../../images/login/bg.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
