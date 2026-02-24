@@ -20,13 +20,7 @@
     margin-bottom: 15px;
 }
 
-.footer-brand span {
-    display: block;
-    font-size: 0.55rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.6;
-}
+/* .footer-brand span removed */
 
 /* ========== Footer Text ========== */
 .footer-text {
