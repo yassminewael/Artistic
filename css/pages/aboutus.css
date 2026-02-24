@@ -168,69 +168,6 @@
     margin: 0;
 }
 
-/* ========== Team Section ========== */
-.team-section {
-    padding: 100px 0;
-    background-color: var(--white);
-}
-
-.team-card {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: var(--cream);
-    border-radius: var(--radius-lg);
-    transition: all 0.3s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.team-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid var(--primary-light);
-    transition: border-color 0.3s ease;
-}
-
-.team-card:hover img {
-    border-color: var(--primary-color);
-}
-
-.team-card h5 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 5px;
-}
-
-.team-card .role {
-    font-size: 0.9rem;
-    color: var(--primary-color);
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.team-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.team-social a {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    transition: color 0.2s;
-}
-
-.team-social a:hover {
-    color: var(--primary-color);
-}
 
 /* ========== CTA Section ========== */
 .cta-section {
@@ -238,17 +175,6 @@
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
     text-align: center;
     overflow: hidden;
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.1) 0%, transparent 50%);
-    pointer-events: none;
 }
 
 .cta-section h2 {
