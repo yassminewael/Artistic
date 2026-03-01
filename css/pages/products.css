@@ -1,0 +1,143 @@
+/* ==========================================
+   Artistic Home - Products Page Styles
+   ==========================================
+   Page-specific styles for products-cera.html
+   Dependencies: styles.css, components/*
+   ========================================== */
+
+/* ========== Products Header ========== */
+.products-header {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.results-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* ========== Category Tabs ========== */
+.category-tabs .nav-link {
+    color: var(--text-dark);
+    background-color: var(--cream);
+    border: 1px solid var(--warm-beige);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.category-tabs .nav-link:hover {
+    background-color: var(--warm-beige);
+    border-color: var(--warm-beige);
+}
+
+.category-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Ramadan Tab Special Style */
+.category-tabs .ramadan-tab {
+    border-color: #D4AF37;
+}
+
+.category-tabs .ramadan-tab.active {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+}
+
+/* ========== Sidebar Sticky ========== */
+@media (min-width: 992px) {
+    .filters-sidebar {
+        position: sticky;
+        top: 100px;
+    }
+}
+
+/* ========== Empty State ========== */
+.products-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+.products-empty i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--light-tan);
+}
+
+/* ========== Custom Pagination ========== */
+.pagination-custom .page-link {
+    color: var(--text-dark);
+    border: 1px solid var(--warm-beige);
+    margin: 0 4px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.pagination-custom .page-link:hover,
+.pagination-custom .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+    z-index: 1;
+}
+
+.pagination-custom .page-item.disabled .page-link {
+    background-color: transparent;
+    border-color: var(--warm-beige);
+    opacity: 0.5;
+    color: var(--text-muted);
+}
+
+.pagination-custom .page-link:focus {
+    box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.15);
+}
+
+/* ========== Utility Classes for Cleanup ========== */
+.badge-ramadan,
+.badge-antique,
+.badge-limited {
+    background-color: #D4AF37 !important;
+}
+
+.carousel-control-icon-dark {
+    filter: invert(1);
+}
+
+.font-serif, .font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.product-modal-img-height {
+    height: 400px;
+    object-fit: cover;
+}
+
+.lh-1-7 {
+    line-height: 1.7;
+}
+
+.sort-select {
+    width: auto;
+    min-width: 140px;
+    cursor: pointer;
+}
+
+.product-modal-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
